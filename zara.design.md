@@ -27,7 +27,7 @@ seo:
 colors:
   # Primary Brand Identity
   brand-blue: "#00ADEF"
-  brand-midnight: "#000115"
+  brand-midnight: "#182236"
 
   # Electric Blue Full Shade Scale (#00ADEF)
   blue-050: "#E5F8FE"   # Tint floor, badge backgrounds, subtle callout glow
