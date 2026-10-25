@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaultex — Industrial Safety Footwear | Dealership Opportunities</title>
+  <meta name="description" content="Explore Vaultex safety footwear range, discover dealership opportunities across India, and meet our team at Gujarat WOSH 2026, Stall no. 47 &amp; 48." />
+  
+  <!-- Favicon / Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN with Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            archivo: ['Archivo', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#00ADEF',
+              'blue-light': '#E5F8FE',
+              'blue-hover': '#26C3F3',
+              'blue-dark': '#0090C9',
+              midnight: '#000115',
+              'midnight-card': '#070C1E',
+              'midnight-surface': '#03081A',
+            },
+            surface: {
+              subtle: '#F4F8FA',
+              light: '#F8FAFC',
+              input: '#EEF3F6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Strict global reset: No box-shadows, no borders, no blurs, and no gradients */
+    *, *::before, *::after {
+      box-shadow: none !important;
+      text-shadow: none !important;
+      border: 0 solid transparent !important;
+      outline: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      filter: none !important;
+      background-image: none !important;
+    }
+
+    body {
+      font-family: 'Archivo', sans-serif;
+      background-color: #FFFFFF;
+      color: #000115;
+    }
+
+    /* Flat borderless inputs with clean surface background */
+    input, select, textarea {
+      outline: none !important;
+      border: none !important;
+    }
+    input:focus, select:focus, textarea:focus {
+      background-color: #E5F8FE !important;
+      outline: none !important;
+    }
+
+    /* FAQ accordion styling without borders or shadows */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+      opacity: 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 280px;
+      opacity: 1;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      color: #00ADEF;
+    }
+
+    /* Subtle image hover animation */
+    .shoe-card img {
+      transition: transform 0.3s ease;
+    }
+    .shoe-card:hover img {
+      transform: scale(1.04);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-brand-midnight">
+
+  <!-- TOP UTILITY / ANNOUNCEMENT BAR (FLAT) -->
+  <div class="bg-brand-midnight text-white text-xs sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-brand-blue text-brand-midnight">
+          Exhibition Alert
+        </span>
+        <span class="text-slate-300">
+          Meet us at <strong>Gujarat WOSH 2026</strong> · Aarana Lawns, Vadodara · <strong>Stall no. 47 &amp; 48</strong>
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:+919225008576" class="flex items-center gap-1.5 hover:text-brand-blue transition">
+          <svg class="w-3.5 h-3.5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="font-bold">+91 92250 08576</span>
+        </a>
+        <span class="text-white/20 hidden md:inline">|</span>
+        <a href="mailto:info@calliberssafety.com" class="hidden md:flex items-center gap-1.5 hover:text-brand-blue transition">
+          <svg class="w-3.5 h-3.5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>info@calliberssafety.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER (FLAT, NO BORDERS, NO BLURS) -->
+  <header class="bg-white sticky top-[37px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Vaultex Logo -->
+      <a href="#hero" class="flex items-center gap-3 group" aria-label="Vaultex Safety Footwear">
+        <img src="Asset/Vaultex logo.JPEG" alt="Vaultex - Your Safety Is In Safe Hands" class="h-12 w-auto object-contain transition group-hover:opacity-90" />
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-700">
+        <a href="#brand" class="hover:text-brand-blue transition">Know Vaultex</a>
+        <a href="#products" class="hover:text-brand-blue transition">Footwear Range</a>
+        <a href="#dealership" class="hover:text-brand-blue transition">Dealership &amp; Support</a>
+        <a href="#accelerator" class="hover:text-brand-blue transition">Rewards Program</a>
+        <a href="#exhibition" class="hover:text-brand-blue transition">Gujarat WOSH</a>
+        <a href="#faqs" class="hover:text-brand-blue transition">FAQs</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:+919225008576" class="px-4 py-2.5 text-xs font-bold text-brand-midnight hover:text-brand-blue transition flex items-center gap-1.5">
+          <span>Call Us</span>
+        </a>
+        <button onclick="openModal()" class="px-5 py-2.5 rounded-xl bg-brand-blue text-brand-midnight text-xs font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200">
+          Enquire Dealership ↗
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg bg-surface-subtle text-brand-midnight focus:outline-none" aria-label="Toggle Navigation Menu">
+        <svg id="menuIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menuIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu (Flat) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white px-5 py-6 space-y-4">
+      <nav class="flex flex-col space-y-3 text-base font-bold text-slate-800">
+        <a href="#brand" class="mobile-nav-link hover:text-brand-blue py-1">Know Vaultex</a>
+        <a href="#products" class="mobile-nav-link hover:text-brand-blue py-1">Footwear Range</a>
+        <a href="#dealership" class="mobile-nav-link hover:text-brand-blue py-1">Dealership &amp; Support</a>
+        <a href="#accelerator" class="mobile-nav-link hover:text-brand-blue py-1">Growth Accelerator Program</a>
+        <a href="#exhibition" class="mobile-nav-link hover:text-brand-blue py-1">Gujarat WOSH 2026</a>
+        <a href="#faqs" class="mobile-nav-link hover:text-brand-blue py-1">FAQs</a>
+      </nav>
+      <div class="pt-4 flex flex-col gap-3">
+        <button onclick="openModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl bg-brand-blue text-brand-midnight text-center font-black uppercase text-xs tracking-wider">
+          Enquire About Dealership
+        </button>
+        <a href="tel:+919225008576" class="w-full py-2.5 rounded-xl bg-surface-subtle text-center text-xs font-bold text-slate-700">
+          Call +91 92250 08576
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 1: HERO & INQUIRY FORM (ABOVE THE FOLD, PURE SOLID FLAT)
+         Content from: Landing Page Content - Vaultex.md Section 1
+         ========================================================================= -->
+    <section id="hero" class="bg-surface-subtle py-12 lg:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- LEFT HERO CONTENT -->
+          <div class="lg:col-span-7">
+            <!-- Calling Dealers Badge (Flat) -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white text-xs font-bold text-brand-midnight mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+              <span>Calling dealers of safety equipment, industrial tools, safety shoes &amp; hardware across India</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] font-black leading-[1.08] tracking-tight text-brand-midnight">
+              Your next big business opportunity starts with <span class="text-brand-blue">Vaultex</span>.
+            </h1>
+
+            <!-- Subheading -->
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+              Explore the Vaultex safety footwear range, discover dealership opportunities and meet the team at <strong>Gujarat WOSH 2026</strong>.
+            </p>
+
+            <!-- Event Highlight Box (Flat) -->
+            <div class="mt-8 p-5 rounded-2xl bg-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 max-w-2xl">
+              <div class="flex items-center gap-4">
+                <div class="w-16 h-12 rounded-xl bg-brand-midnight flex flex-col items-center justify-center text-white shrink-0">
+                  <span class="text-[10px] uppercase font-bold text-brand-blue leading-none">Nov</span>
+                  <span class="text-xs font-black leading-tight whitespace-nowrap">20–21</span>
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold uppercase tracking-wider text-brand-blue">Exhibition Venue</div>
+                  <div class="text-sm font-black text-brand-midnight">Aarana Lawns, Vadodara, Gujarat</div>
+                  <div class="text-xs font-bold text-slate-500">20–21 November 2026</div>
+                </div>
+              </div>
+              <div class="px-4 py-2 rounded-xl bg-brand-blue-light text-center sm:text-right shrink-0">
+                <span class="block text-[10px] font-black uppercase text-brand-midnight tracking-wider">Meet Our Team</span>
+                <span class="text-sm font-black text-brand-blue-dark">Stall no. 47 &amp; 48</span>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="#heroForm" class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-sm font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center">
+                Enquire about dealership <span>→</span>
+              </a>
+              <a href="#products" class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-sm font-bold hover:text-brand-blue transition text-center">
+                Explore Footwear Range <span>↘</span>
+              </a>
+            </div>
+
+            <!-- Speak with us -->
+            <div class="mt-6 flex items-center gap-2 text-sm text-slate-600">
+              <span>Prefer to speak with us?</span>
+              <a href="tel:+919225008576" class="font-extrabold text-brand-midnight hover:text-brand-blue transition flex items-center gap-1">
+                <span>Call +91 92250 08576</span>
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+
+            <!-- Key Trust Badges -->
+            <div class="mt-8 pt-6 flex flex-wrap gap-y-2 gap-x-6 text-xs font-semibold text-slate-600">
+              <span class="flex items-center gap-1.5"><span class="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 grid place-items-center font-bold text-[10px]">✓</span> 20+ Years Manufacturing Since 2003</span>
+              <span class="flex items-center gap-1.5"><span class="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 grid place-items-center font-bold text-[10px]">✓</span> 70,000 Sq. Ft. Facility</span>
+              <span class="flex items-center gap-1.5"><span class="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 grid place-items-center font-bold text-[10px]">✓</span> BIS &amp; CE Quality Compliance</span>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: INQUIRY FORM (Above the Fold, Flat Card) -->
+          <div class="lg:col-span-5">
+            <div id="heroForm" class="rounded-[1.75rem] bg-white p-6 sm:p-8 scroll-mt-28">
+              <!-- Header tag -->
+              <div class="pb-5 mb-5">
+                <span class="inline-block text-[11px] font-black uppercase tracking-widest text-brand-blue">
+                  Distributor · Wholesalers · Bulk Orders
+                </span>
+                <h2 class="text-2xl font-black text-brand-midnight mt-1">
+                  Let’s explore the opportunity.
+                </h2>
+                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                  Share your details to connect with our team about a Vaultex dealership.
+                </p>
+              </div>
+
+              <!-- Form fields (Flat inputs) -->
+              <form id="leadCaptureForm" onsubmit="handleFormSubmit(event, 'heroFormMessage')" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-bold text-brand-midnight mb-1.5">Full name *</label>
+                  <input type="text" name="fullName" required placeholder="Enter your full name" 
+                    class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-midnight mb-1.5">Business name *</label>
+                  <input type="text" name="businessName" required placeholder="Company or firm name" 
+                    class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-midnight mb-1.5">Mobile number *</label>
+                  <input type="tel" name="mobileNumber" required pattern="[0-9+ ]{10,15}" placeholder="10-digit mobile number" 
+                    class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-midnight mb-1.5">City and state *</label>
+                  <input type="text" name="cityState" required placeholder="e.g. Ahmedabad, Gujarat" 
+                    class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-midnight mb-1.5">Business category *</label>
+                  <select name="businessCategory" required 
+                    class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input text-slate-700 focus:bg-brand-blue-light transition">
+                    <option value="">Select your business category</option>
+                    <option value="Safety equipment">Safety equipment</option>
+                    <option value="Industrial tools">Industrial tools</option>
+                    <option value="Safety shoes">Safety shoes</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="pt-1">
+                  <label class="flex items-start gap-2.5 text-[11px] leading-snug text-slate-500 cursor-pointer">
+                    <input type="checkbox" name="consent" required class="mt-0.5 rounded text-brand-blue" />
+                    <span>By submitting, you agree to be contacted by Calliber's Safety Solutions LLP regarding your dealership enquiry. *</span>
+                  </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-black uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200 flex items-center justify-center gap-2">
+                  <span>Submit Business Enquiry</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </form>
+
+              <!-- Success Alert Placeholder -->
+              <div id="heroFormMessage" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs">
+                <strong>Thank you!</strong> Your enquiry has been received. Our dealership team from Calliber's Safety Solutions LLP will get in touch with you shortly.
+              </div>
+
+              <div class="mt-4 pt-3 flex items-center justify-between text-[11px] text-slate-400">
+                <span>🔒 Secure B2B Channel</span>
+                <a href="tel:+919225008576" class="hover:text-brand-blue font-semibold text-slate-500">Need immediate help? Call us</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 2: KNOW YOUR BRAND: VAULTEX | SINCE 2003
+         Content from: Landing Page Content - Vaultex.md Section 2
+         ========================================================================= -->
+    <section id="brand" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Text Narrative -->
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-black uppercase tracking-widest mb-3">
+              Know Your Brand: Vaultex | Since 2003
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-midnight tracking-tight">
+              Over two decades of moving safety forward.
+            </h2>
+
+            <div class="mt-6 space-y-4 text-slate-600 text-base leading-relaxed">
+              <p>
+                Since its introduction in 2003, Vaultex has grown from its manufacturing base in India to supply industrial safety footwear to customers worldwide.
+              </p>
+              <p>
+                With a <strong>70,000 sq. ft. production facility in Greater Noida</strong>, the brand brings together footwear design, prototype development, manufacturing, and quality inspection. From stitching the uppers to finishing and packaging, the brand produces in-house, allowing close oversight throughout the process.
+              </p>
+              <p>
+                Quality checks extend beyond the finished shoe. Vaultex monitors technical specifications through development and production, with batch testing at its in-house facility against applicable <strong>BIS and CE parameters</strong>. For dealers, this is an opportunity to explore a footwear brand backed by manufacturing experience, an established product range, and an international distributor network.
+              </p>
+              <p class="font-extrabold text-brand-midnight text-lg">
+                A legacy you can be part of.
+              </p>
+              <p>
+                Discover the range and discuss your next business opportunity with our team at Gujarat WOSH 2026.
+              </p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <button onclick="openModal()" class="px-7 py-3.5 rounded-xl bg-brand-midnight text-white text-xs font-black uppercase tracking-wider hover:bg-brand-blue hover:text-brand-midnight transition duration-200">
+                Explore dealership opportunities <span>→</span>
+              </button>
+              <a href="#products" class="px-6 py-3.5 rounded-xl bg-surface-subtle text-brand-midnight text-xs font-bold hover:text-brand-blue transition">
+                View Shoe Models
+              </a>
+            </div>
+          </div>
+
+          <!-- Manufacturing & Quality Proof Pillars (Flat) -->
+          <div class="lg:col-span-5 space-y-4">
+            <!-- Pillar 1 -->
+            <div class="p-6 rounded-2xl bg-surface-subtle">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-blue/15 text-brand-blue-dark grid place-items-center font-black text-xl shrink-0">
+                  70K
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-brand-midnight">70,000 Sq. Ft. Facility</h3>
+                  <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                    Integrated manufacturing campus in Greater Noida handling upper stitching, sole molding, finishing, and packaging in-house.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="p-6 rounded-2xl bg-surface-subtle">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-midnight text-brand-blue grid place-items-center font-black text-xl shrink-0">
+                  BIS
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-brand-midnight">BIS &amp; CE Quality Parameter Testing</h3>
+                  <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                    Rigorous in-house batch testing monitors impact resistance, slip resistance, sole bond strength, and technical durability.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="p-6 rounded-2xl bg-surface-subtle">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-blue/15 text-brand-blue-dark grid place-items-center font-black text-xl shrink-0">
+                  20+
+                </div>
+                <div>
+                  <h3 class="text-base font-black text-brand-midnight">Over Two Decades of Innovation</h3>
+                  <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                    Serving international and domestic markets since 2003 with an expanding distributor footprint and robust inventory backing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Callout Note -->
+            <div class="p-5 rounded-2xl bg-brand-midnight text-white text-xs leading-relaxed flex items-center gap-3">
+              <span class="text-2xl text-brand-blue shrink-0">★</span>
+              <span>
+                Meet the leadership team at <strong>Stall no. 47 &amp; 48, Gujarat WOSH 2026</strong> to discuss regional distribution rights.
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 3: EXPLORE THE RANGE (PRODUCTS)
+         Content from: Landing Page Content - Vaultex.md Section 3
+         ========================================================================= -->
+    <section id="products" class="py-20 bg-surface-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-black uppercase tracking-widest mb-3">
+            Product Portfolio
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-midnight tracking-tight">
+            Explore the range. Find your next business opportunity.
+          </h2>
+          <p class="mt-4 text-base text-slate-600 leading-relaxed">
+            Discover a selection of Vaultex footwear, from classic workwear styles to contemporary designs. Speak with our team about the models relevant to your customers.
+          </p>
+        </div>
+
+        <!-- Filter Tags (Flat) -->
+        <div class="mt-8 flex flex-wrap gap-2.5">
+          <button class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-brand-midnight text-white" data-filter="all">
+            All Models (8)
+          </button>
+          <button class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue" data-filter="classic">
+            Classic &amp; Slip-On
+          </button>
+          <button class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue" data-filter="sporty">
+            Sporty &amp; Lightweight
+          </button>
+          <button class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue" data-filter="heavy">
+            Heavy-Duty &amp; EX DD
+          </button>
+        </div>
+
+        <!-- PRODUCT GRID (Exact 8 models from Landing Page Content, Flat Cards) -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- 1. Vaultex Epic 051 -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="sporty">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-black uppercase tracking-wider">
+                Sporty Series
+              </span>
+              <img src="Asset/shoe (5).jpeg" alt="Vaultex Epic 051" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Epic 051
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Lightweight athletic silhouette with reinforced composite protection and high-cushioning dual density outsole.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Model #051</span>
+                <button onclick="openModalWithModel('Vaultex Epic 051')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Vaultex Eves -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="classic">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-subtle text-slate-700 text-[10px] font-black uppercase tracking-wider">
+                Slip-On Style
+              </span>
+              <img src="Asset/shoe (1).jpeg" alt="Vaultex Eves" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Eves
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Laceless slip-on industrial safety shoe offering quick fitting, water-resistant grain leather, and oil-resistant grip.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Slip-On Series</span>
+                <button onclick="openModalWithModel('Vaultex Eves')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Vaultex Tic Toc -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="sporty">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-blue text-brand-midnight text-[10px] font-black uppercase tracking-wider">
+                Breathable Mesh
+              </span>
+              <img src="Asset/shoe (4).jpeg" alt="Vaultex Tic Toc" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Tic Toc
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                High-visibility knitted mesh upper with red-accented weave for warm industrial settings, warehouses, and logistics.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Knit Series</span>
+                <button onclick="openModalWithModel('Vaultex Tic Toc')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Vaultex MF-1010 (Black) -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="classic">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-black uppercase tracking-wider">
+                Classic Workwear
+              </span>
+              <img src="Asset/shoe (3).jpeg" alt="Vaultex MF-1010 (Black)" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex MF-1010 (Black)
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Workhorse industrial safety boot with 200J steel toe cap, dual density PU sole, and contrast stitching reinforcement.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">MF Series</span>
+                <button onclick="openModalWithModel('Vaultex MF-1010 (Black)')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Vaultex Lite -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="sporty">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-subtle text-slate-700 text-[10px] font-black uppercase tracking-wider">
+                Ultra Light
+              </span>
+              <img src="Asset/shoe (9).jpeg" alt="Vaultex Lite" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Lite
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Reduced-weight protective design engineered for all-day comfort, anti-fatigue insole, and flexible foot movement.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Lite Series</span>
+                <button onclick="openModalWithModel('Vaultex Lite')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Vaultex Ultra Pro (CIP - D/D) -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="heavy">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-black uppercase tracking-wider">
+                CIP Heavy Duty
+              </span>
+              <img src="Asset/shoe (8).jpeg" alt="Vaultex Ultra Pro (CIP - D/D)" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Ultra Pro (CIP - D/D)
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Heavy-duty executive safety footwear featuring molded heel stabilization and high-abrasion resistance for harsh plants.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">CIP Dual Density</span>
+                <button onclick="openModalWithModel('Vaultex Ultra Pro (CIP - D/D)')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Vaultex Boxer Sporty DD EX -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="heavy">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-blue text-brand-midnight text-[10px] font-black uppercase tracking-wider">
+                Suede &amp; Leather
+              </span>
+              <img src="Asset/shoe (7).jpeg" alt="Vaultex Boxer Sporty DD EX" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Boxer Sporty DD EX
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Grey suede leather hybrid with reinforced toe bumper, padded collar, and multi-directional anti-skid lug tread.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Boxer DD EX</span>
+                <button onclick="openModalWithModel('Vaultex Boxer Sporty DD EX')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Vaultex Stellar EX DD -->
+          <div class="product-item shoe-card group rounded-2xl bg-white overflow-hidden transition-all duration-300" data-cat="heavy">
+            <div class="relative bg-white p-4 h-64 flex items-center justify-center overflow-hidden">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-black uppercase tracking-wider">
+                Dual Tone Sole
+              </span>
+              <img src="Asset/shoe (2).jpeg" alt="Vaultex Stellar EX DD" class="h-full w-auto object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-base font-black text-brand-midnight group-hover:text-brand-blue transition">
+                Vaultex Stellar EX DD
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                Premium grain leather with grey-on-black dual density PU sole, ergonomic ankle support, and antistatic properties.
+              </p>
+              <div class="mt-4 pt-3 flex items-center justify-between">
+                <span class="text-[11px] font-bold text-slate-400">Stellar EX DD</span>
+                <button onclick="openModalWithModel('Vaultex Stellar EX DD')" class="text-xs font-black text-brand-blue hover:text-brand-midnight transition">
+                  Enquire Model →
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section 3 Bottom Banner Callout (Flat) -->
+        <div class="mt-12 p-8 rounded-3xl bg-brand-midnight text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span class="text-xs font-black uppercase tracking-widest text-brand-blue">Interested in a model?</span>
+            <h3 class="text-2xl sm:text-3xl font-black mt-1">Interested in a model? Let’s discuss it.</h3>
+            <p class="mt-2 text-sm text-slate-300 max-w-2xl">
+              Enquire about the range, available specifications and dealership opportunities with our official distribution team.
+            </p>
+          </div>
+          <button onclick="openModal()" class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200">
+            Enquire about dealership <span>↗</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 4: DEALERSHIP OPPORTUNITY AND SUPPORT
+         Content from: Landing Page Content - Vaultex.md Section 4
+         ========================================================================= -->
+    <section id="dealership" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-black uppercase tracking-widest mb-3">
+            Dealership Opportunity and Support
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-midnight tracking-tight">
+            A new range for your business. A team to discuss it with.
+          </h2>
+          <p class="mt-4 text-base text-slate-600 leading-relaxed">
+            Whether you deal in safety equipment, industrial tools, safety shoes or hardware, we invite you to explore Vaultex dealership opportunities.
+          </p>
+        </div>
+
+        <!-- 3 Pillars Grid (Flat) -->
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="p-8 rounded-3xl bg-surface-subtle">
+            <div class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <h3 class="text-xl font-black text-brand-midnight">Explore the product range</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+              Discuss footwear models and specifications relevant to your customer base. From entry-level industrial requirements to premium executive workwear.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 rounded-3xl bg-surface-subtle">
+            <div class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-black text-brand-midnight">Connect with our team</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+              Tell us about your business, location, and customers so we can discuss the opportunity with you, aligning territories and commercial terms.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 rounded-3xl bg-surface-subtle">
+            <div class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-xl font-black text-brand-midnight">Discover dealer support</h3>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+              Learn about the dealer program support available and how to get started, including POS branding, marketing collateral, and expedited dispatch logistics.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Dealership inquiries welcome across India (Flat) -->
+        <div class="mt-12 text-center">
+          <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-subtle text-sm font-black text-brand-midnight">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Dealership inquiries welcome from across India.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 5: GROWTH ACCELERATOR PROGRAM
+         Content from: Landing Page Content - Vaultex.md Section 5
+         ========================================================================= -->
+    <section id="accelerator" class="py-20 bg-brand-midnight text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue/20 text-brand-blue text-xs font-black uppercase tracking-widest mb-3">
+            Exclusive dealer growth accelerator program
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
+            Your business. Your growth. Your choice of rewards.
+          </h2>
+          <p class="mt-4 text-base text-slate-300 leading-relaxed">
+            Explore a program that brings together business benefits and rewards for eligible dealers.
+          </p>
+        </div>
+
+        <!-- Reward Choices Cards Grid (Flat) -->
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Reward 1: Cash Discounts -->
+          <div class="p-6 rounded-2xl bg-white/[0.06] hover:bg-white/[0.1] transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue/20 text-brand-blue grid place-items-center text-xl font-black mb-4">
+              ₹
+            </div>
+            <h3 class="text-lg font-black text-white">Cash discounts</h3>
+            <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+              Immediate margins and tiered cash rebate structures for qualifying dealer invoices.
+            </p>
+          </div>
+
+          <!-- Reward 2: Turnover Discounts -->
+          <div class="p-6 rounded-2xl bg-white/[0.06] hover:bg-white/[0.1] transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue/20 text-brand-blue grid place-items-center text-xl font-black mb-4">
+              %
+            </div>
+            <h3 class="text-lg font-black text-white">Turnover discounts</h3>
+            <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+              Quarterly and annual volume rebates scaling with your regional order growth.
+            </p>
+          </div>
+
+          <!-- Reward 3: Sponsored Trips -->
+          <div class="p-6 rounded-2xl bg-white/[0.06] hover:bg-white/[0.1] transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue/20 text-brand-blue grid place-items-center text-xl font-black mb-4">
+              ✈
+            </div>
+            <h3 class="text-lg font-black text-white">Sponsored trips</h3>
+            <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+              Curated domestic &amp; international dealer retreat packages for top-performing partners.
+            </p>
+          </div>
+
+          <!-- Reward 4: Premium Smartphones -->
+          <div class="p-6 rounded-2xl bg-white/[0.06] hover:bg-white/[0.1] transition group">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue/20 text-brand-blue grid place-items-center text-xl font-black mb-4">
+              📱
+            </div>
+            <h3 class="text-lg font-black text-white">Premium smartphones</h3>
+            <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+              Flagship smart devices and tech rewards unlocked upon meeting partner milestone targets.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Punchline Banner (Flat) -->
+        <div class="mt-12 p-8 rounded-3xl bg-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-brand-blue">
+              You get to choose what you want!
+            </div>
+            <p class="mt-2 text-sm text-slate-300">
+              Meet our team at <strong>stall no. 47 &amp; 48</strong> to discuss the program, available choices and eligibility.
+            </p>
+            <p class="mt-1 text-[11px] text-slate-500 italic">
+              *Program eligibility, targets and terms apply.
+            </p>
+          </div>
+
+          <button onclick="openModal()" class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200">
+            Enquire about the program <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 6: EXHIBITION INVITATION (GUJARAT WOSH 2026)
+         Content from: Landing Page Content - Vaultex.md Section 6
+         ========================================================================= -->
+    <section id="exhibition" class="py-20 bg-surface-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left: Invitation Details -->
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-black uppercase tracking-widest mb-3">
+              Exhibition Invitation
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-midnight tracking-tight">
+              See the footwear. Meet the people. Explore the possibilities.
+            </h2>
+
+            <p class="mt-4 text-base text-slate-600 leading-relaxed">
+              Join us at <strong>Gujarat WOSH 2026</strong> for a conversation about your business and Vaultex dealership opportunities.
+            </p>
+
+            <div class="mt-6">
+              <h3 class="text-sm font-black uppercase tracking-wider text-brand-midnight mb-3">At our stall, you can:</h3>
+              <ul class="space-y-2.5 text-slate-700 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue-dark font-black text-xs grid place-items-center shrink-0 mt-0.5">•</span>
+                  <span>Explore the Vaultex footwear range in person, inspecting materials, stitching, and soles.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue-dark font-black text-xs grid place-items-center shrink-0 mt-0.5">•</span>
+                  <span>Discuss products specifically matched to your customer base and industry demands.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue-dark font-black text-xs grid place-items-center shrink-0 mt-0.5">•</span>
+                  <span>Learn about dealership opportunities, territory exclusivity, and comprehensive support.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue-dark font-black text-xs grid place-items-center shrink-0 mt-0.5">•</span>
+                  <span>Discover the dealer growth accelerator program, rewards, and eligibility tiers.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <button onclick="openModal()" class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200">
+                Enquire before your visit <span>→</span>
+              </button>
+              <a href="tel:+919225008576" class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-brand-blue transition">
+                Call +91 92250 08576
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: VIP Exhibition Badge Card (Flat) -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl bg-brand-midnight text-white p-8 relative">
+              <div class="flex items-center justify-between pb-5">
+                <div>
+                  <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">Official Invitation</span>
+                  <div class="text-2xl font-black text-white mt-1">Gujarat WOSH 2026</div>
+                </div>
+                <div class="px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs font-extrabold uppercase tracking-wider">
+                  B2B Trade Meet
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-5">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-brand-blue text-brand-midnight grid place-items-center font-black shrink-0">
+                    📅
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase">Dates</div>
+                    <div class="text-base font-black text-white">20–21 November 2026</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-brand-blue text-brand-midnight grid place-items-center font-black shrink-0">
+                    📍
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-400 uppercase">Venue Location</div>
+                    <div class="text-base font-black text-white">Aarana Lawns, Vadodara, Gujarat</div>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white/[0.08] flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-black uppercase tracking-wider text-brand-blue">Exhibition Location</span>
+                    <div class="text-xl font-black text-white">Stall no. 47 &amp; 48</div>
+                  </div>
+                  <span class="px-3 py-1 rounded-full bg-brand-blue text-brand-midnight font-black text-xs">
+                    Vaultex Team
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-5 text-center">
+                <p class="text-xs text-slate-400">
+                  Pre-book a direct 1-on-1 meeting slot with our leadership team before the exhibition starts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 7: FAQS
+         Content from: Landing Page Content - Vaultex.md Section 7
+         ========================================================================= -->
+    <section id="faqs" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-black uppercase tracking-widest mb-3">
+            Frequently Asked Questions
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-brand-midnight tracking-tight">
+            A few things you may want to know
+          </h2>
+          <p class="mt-3 text-sm text-slate-500 max-w-xl mx-auto">
+            These answers guide your enquiry; the sales team can discuss specific commercial and dealership terms directly.
+          </p>
+        </div>
+
+        <!-- FAQ Items (Exact 6 questions from content doc, Flat) -->
+        <div class="mt-12 space-y-4">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>Who is this opportunity for?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              We welcome inquiries from dealers of safety equipment, industrial tools, safety shoes, and hardware who are interested in the Vaultex footwear range.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>Can dealers from outside Gujarat enquire?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              Yes. Dealership inquiries are welcome from across India.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>How can I discuss dealership details?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              Submit the inquiry form, call +91 92250 08576, or meet our team at stall no. 47 &amp; 48 at Gujarat WOSH 2026. We can discuss your business and the dealership details directly.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>Is dealer support available?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              Yes. Dealer program support will be available. Speak with our team to understand the support offered.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>Where can I learn about the growth accelerator program?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              Visit our stall to discuss the program, reward choices, eligibility, and applicable terms.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-black text-base text-brand-midnight focus:outline-none">
+              <span>Can I enquire before the exhibition?</span>
+              <span class="faq-icon text-2xl font-light text-brand-blue transition-transform duration-300 shrink-0">+</span>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1">
+              Yes. Share your details through the form or contact our team to start the conversation before your visit.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 8: FINAL CTA & CONTACT / FOOTER
+         Content from: Landing Page Content - Vaultex.md Section 8
+         ========================================================================= -->
+    <section class="py-16 bg-surface-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-3xl bg-brand-midnight text-white p-8 sm:p-12 lg:p-14">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-8">
+              <span class="text-xs font-black uppercase tracking-widest text-brand-blue">Next Steps</span>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white mt-2">
+                Let’s talk about your next step with Vaultex.
+              </h2>
+              <p class="mt-4 text-slate-300 text-base leading-relaxed max-w-2xl">
+                Tell us about your business and explore the opportunity to add Vaultex safety footwear to your range.
+              </p>
+
+              <!-- Contact & Event Details Grid (Flat) -->
+              <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
+                <!-- Direct Contacts -->
+                <div class="space-y-3">
+                  <div class="text-xs font-bold uppercase tracking-wider text-brand-blue">Direct Contact</div>
+                  <div class="text-sm">
+                    <span class="text-slate-400">Call:</span> 
+                    <a href="tel:+919225008576" class="font-black text-white hover:text-brand-blue transition ml-1">+91 92250 08576</a>
+                  </div>
+                  <div class="text-sm">
+                    <span class="text-slate-400">Email:</span> 
+                    <a href="mailto:info@calliberssafety.com" class="font-black text-white hover:text-brand-blue transition ml-1">info@calliberssafety.com</a>
+                  </div>
+                </div>
+
+                <!-- Event Details -->
+                <div class="space-y-2">
+                  <div class="text-xs font-bold uppercase tracking-wider text-brand-blue">Meet us at Gujarat WOSH 2026</div>
+                  <div class="text-sm text-slate-300">20–21 November 2026</div>
+                  <div class="text-sm text-slate-300">Aarana Lawns, Vadodara, Gujarat</div>
+                  <div class="text-sm font-black text-white">Stall No. 47 &amp; 48</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+              <button onclick="openModal()" class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-brand-blue text-brand-midnight text-sm font-black uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center">
+                Enquire about dealership <span>↗</span>
+              </button>
+              <a href="tel:+919225008576" class="mt-4 text-xs font-bold text-slate-400 hover:text-white transition">
+                Prefer calling? +91 92250 08576
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (FLAT, NO BORDERS) -->
+  <footer class="bg-brand-midnight text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start justify-between">
+        
+        <!-- Brand & Partner Info -->
+        <div class="md:col-span-6 space-y-4">
+          <img src="Asset/Vaultex logo.JPEG" alt="Vaultex Safety Footwear" class="h-10 w-auto bg-white p-1 rounded-lg" />
+          <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+            Vaultex is an international industrial safety footwear brand engineered for demanding work environments since 2003.
+          </p>
+          <div class="pt-2 text-xs text-slate-300">
+            <span class="block text-slate-500 font-bold uppercase text-[10px] tracking-wider">Market Distribution Partner</span>
+            <strong class="text-white text-sm">Calliber's Safety Solutions LLP</strong>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-2 text-xs">
+          <span class="block font-black uppercase text-[10px] tracking-wider text-brand-blue">Navigation</span>
+          <div class="flex flex-col space-y-2 text-slate-400">
+            <a href="#brand" class="hover:text-white transition">Know Vaultex</a>
+            <a href="#products" class="hover:text-white transition">Product Range</a>
+            <a href="#dealership" class="hover:text-white transition">Dealership Opportunity</a>
+            <a href="#accelerator" class="hover:text-white transition">Rewards Program</a>
+            <a href="#exhibition" class="hover:text-white transition">Gujarat WOSH 2026</a>
+            <a href="#faqs" class="hover:text-white transition">FAQs</a>
+          </div>
+        </div>
+
+        <!-- Official Coordinates -->
+        <div class="md:col-span-3 space-y-2 text-xs text-slate-400">
+          <span class="block font-black uppercase text-[10px] tracking-wider text-brand-blue">Contact Information</span>
+          <p class="leading-relaxed">
+            Market Distribution Partner:<br />
+            <strong>Calliber's Safety Solutions LLP</strong>
+          </p>
+          <p>
+            Phone: <a href="tel:+919225008576" class="text-white hover:text-brand-blue font-bold">+91 92250 08576</a><br />
+            Email: <a href="mailto:info@calliberssafety.com" class="text-white hover:text-brand-blue font-bold">info@calliberssafety.com</a>
+          </p>
+          <p class="text-slate-500 pt-2 text-[11px]">
+            Gujarat WOSH 2026: Stall No. 47 &amp; 48
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <p>© <span id="yearSpan">2026</span> Vaultex &amp; Calliber's Safety Solutions LLP. All rights reserved.</p>
+        <p>Built for authorized B2B dealership enquiries.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       DEALERSHIP ENQUIRY POPUP MODAL (FLAT, NO BORDERS, NO SHADOWS, NO BLURS)
+       ========================================================================= -->
+  <div id="enquiryModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-midnight/80 p-4 sm:p-6 md:p-10 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="relative w-full max-w-xl rounded-3xl bg-white p-6 sm:p-8">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-subtle hover:bg-slate-200 text-slate-600 hover:text-brand-midnight grid place-items-center text-sm font-black transition" aria-label="Close Modal">
+        ✕
+      </button>
+
+      <!-- Modal Header -->
+      <div class="pb-4 mb-5 pr-8">
+        <span class="inline-block text-[10px] font-black uppercase tracking-widest text-brand-blue">
+          Dealership &amp; Wholesaler Opportunity
+        </span>
+        <h3 id="modalTitle" class="text-2xl font-black text-brand-midnight mt-1">
+          Enquire About Dealership
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">
+          Share your details to connect directly with the Vaultex &amp; Calliber's team.
+        </p>
+      </div>
+
+      <!-- Modal Form (Flat Inputs) -->
+      <form id="modalForm" onsubmit="handleFormSubmit(event, 'modalFormMessage')" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-brand-midnight mb-1">Full name *</label>
+          <input type="text" name="modalFullName" required placeholder="Your full name" 
+            class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1">Business name *</label>
+            <input type="text" name="modalBusinessName" required placeholder="Company / firm name" 
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1">Mobile number *</label>
+            <input type="tel" name="modalMobileNumber" required pattern="[0-9+ ]{10,15}" placeholder="10-digit mobile number" 
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1">City and state *</label>
+            <input type="text" name="modalCityState" required placeholder="City &amp; State" 
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1">Business category *</label>
+            <select name="modalBusinessCategory" required 
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input text-slate-700 focus:bg-brand-blue-light">
+              <option value="">Select category</option>
+              <option value="Safety equipment">Safety equipment</option>
+              <option value="Industrial tools">Industrial tools</option>
+              <option value="Safety shoes">Safety shoes</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Optional selected model reference -->
+        <div>
+          <label class="block text-xs font-bold text-brand-midnight mb-1">Model interested in (optional)</label>
+          <input type="text" id="modalInterestedModel" name="modalInterestedModel" placeholder="e.g. Vaultex Epic 051 / All Models" 
+            class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light" />
+        </div>
+
+        <!-- Consent -->
+        <div>
+          <label class="flex items-start gap-2 text-[11px] leading-snug text-slate-500 cursor-pointer">
+            <input type="checkbox" name="modalConsent" required class="mt-0.5 rounded text-brand-blue" />
+            <span>By submitting, you agree to be contacted by Calliber's Safety Solutions LLP regarding your dealership enquiry. *</span>
+          </label>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-black uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200">
+          Submit Business Enquiry →
+        </button>
+      </form>
+
+      <!-- Success Notification -->
+      <div id="modalFormMessage" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs">
+        <strong>Thank you!</strong> Your dealership enquiry has been submitted. Our team will contact you shortly.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIconOpen = document.getElementById('menuIconOpen');
+    const menuIconClose = document.getElementById('menuIconClose');
+
+    function toggleMobileMenu() {
+      const isClosed = mobileMenu.classList.contains('hidden');
+      if (isClosed) {
+        mobileMenu.classList.remove('hidden');
+        menuIconOpen.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      });
+    });
+
+    // Product Filter Buttons (Flat)
+    const filterBtns = document.querySelectorAll('.product-filter-btn');
+    const productItems = document.querySelectorAll('.product-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-brand-midnight', 'text-white');
+          b.classList.add('bg-white', 'text-slate-700');
+        });
+        btn.classList.remove('bg-white', 'text-slate-700');
+        btn.classList.add('bg-brand-midnight', 'text-white');
+
+        productItems.forEach(item => {
+          const cat = item.getAttribute('data-cat');
+          if (filter === 'all' || cat === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // FAQ Accordion interaction
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Modal Popup Controls
+    const enquiryModal = document.getElementById('enquiryModal');
+    const modalInterestedModel = document.getElementById('modalInterestedModel');
+
+    function openModal() {
+      modalInterestedModel.value = '';
+      enquiryModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function openModalWithModel(modelName) {
+      modalInterestedModel.value = modelName;
+      enquiryModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      enquiryModal.classList.add('hidden');
+      document.body.style.overflow = '';
+      const msg = document.getElementById('modalFormMessage');
+      if (msg) msg.classList.add('hidden');
+    }
+
+    // Close modal on escape key or clicking backdrop
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !enquiryModal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    enquiryModal.addEventListener('click', (e) => {
+      if (e.target === enquiryModal) {
+        closeModal();
+      }
+    });
+
+    // Lead Form Submission Handler (simulated B2B lead capture)
+    function handleFormSubmit(event, messageElementId) {
+      event.preventDefault();
+      const msgBox = document.getElementById(messageElementId);
+      if (msgBox) {
+        msgBox.classList.remove('hidden');
+        msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
