@@ -1,0 +1,2424 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Vaultex — Industrial Safety Footwear | Dealership Opportunities
+    </title>
+    <meta
+      name="description"
+      content="Explore Vaultex safety footwear range, discover dealership opportunities across India, and meet our team at Gujarat WOSH 2026, Stall no. 47 &amp; 48."
+    />
+
+    <!-- Favicon / Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 Classic Regular & Solid -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS via CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                blue: "#00ADEF",
+                "blue-light": "#E5F8FE",
+                "blue-hover": "#26C3F3",
+                "blue-dark": "#0090C9",
+                midnight: "#00000D",
+                "midnight-card": "#070C1E",
+                "midnight-surface": "#03081A",
+              },
+              surface: {
+                subtle: "#F4F8FA",
+                light: "#F8FAFC",
+                input: "#EEF3F6",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Strict global reset: No box-shadows, no borders, no blurs, and no gradients */
+      *,
+      *::before,
+      *::after {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        border: 0 solid transparent !important;
+        outline: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        filter: none !important;
+        background-image: none !important;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background-color: #ffffff;
+        color: #000115;
+        line-height: 1.6;
+        letter-spacing: -0.011em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: #000115;
+        letter-spacing: -0.025em;
+      }
+
+      h1 {
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+      }
+
+      h2 {
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+      }
+
+      h3 {
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+      }
+
+      p {
+        line-height: 1.65;
+      }
+
+      /* Flat borderless inputs with clean surface background */
+      input,
+      select,
+      textarea {
+        outline: none !important;
+        border: none !important;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        background-color: #e5f8fe !important;
+        outline: none !important;
+      }
+
+      /* FAQ accordion styling without borders or shadows */
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 280px;
+        opacity: 1;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+        color: #00adef;
+      }
+
+      /* Subtle image hover animation */
+      .shoe-card img {
+        transition: transform 0.3s ease;
+      }
+
+      .shoe-card:hover img {
+        transform: scale(1.04);
+      }
+
+      /* Hero shoe float */
+      @keyframes floatShoe {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Hero Badge Glowing Pulse Dot Animation */
+      @keyframes badgeGlowPulse {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 6px 1px rgba(0, 173, 239, 0.6) !important;
+        }
+
+        50% {
+          transform: scale(1.2);
+          box-shadow:
+            0 0 14px 4px rgba(0, 173, 239, 0.9),
+            0 0 22px 8px rgba(0, 173, 239, 0.4) !important;
+        }
+      }
+
+      .badge-glow-dot {
+        animation: badgeGlowPulse 1.8s ease-in-out infinite;
+        box-shadow: 0 0 8px 2px rgba(0, 173, 239, 0.7) !important;
+      }
+
+      /* Font Awesome Classic Regular support & icon definitions */
+      .fa-regular,
+      .far {
+        font-family: "Font Awesome 6 Free" !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        display: inline-block;
+        line-height: 1;
+      }
+      .fa-solid,
+      .fas {
+        font-family: "Font Awesome 6 Free" !important;
+        font-style: normal;
+        font-weight: 900 !important;
+        display: inline-block;
+        line-height: 1;
+      }
+      .fa-regular.fa-phone::before { font-weight: 900 !important; content: "\f095"; }
+      .fa-regular.fa-location-dot::before { font-weight: 900 !important; content: "\f3c5"; }
+      .fa-regular.fa-arrow-right::before { font-weight: 900 !important; content: "\f061"; }
+      .fa-regular.fa-arrow-down::before { font-weight: 900 !important; content: "\f063"; }
+      .fa-regular.fa-arrow-up-right-from-square::before { font-weight: 900 !important; content: "\f08e"; }
+      .fa-regular.fa-bars::before { font-weight: 900 !important; content: "\f0c9"; }
+      .fa-regular.fa-xmark::before { font-weight: 900 !important; content: "\f00d"; }
+      .fa-regular.fa-plus::before { font-weight: 900 !important; content: "\2b"; }
+      .fa-regular.fa-plane::before { font-weight: 900 !important; content: "\f072"; }
+      .fa-regular.fa-mobile-screen::before { font-weight: 900 !important; content: "\f3cf"; }
+      .fa-regular.fa-indian-rupee-sign::before { font-weight: 900 !important; content: "\e1bc"; }
+      .fa-regular.fa-percent::before { font-weight: 900 !important; content: "\25"; }
+      .fa-regular.fa-boxes-stacked::before { font-weight: 900 !important; content: "\f468"; }
+      .fa-regular.fa-shield-halved::before { font-weight: 900 !important; content: "\f3ed"; }
+    </style>
+  </head>
+
+  <body
+    class="antialiased selection:bg-brand-blue selection:text-brand-midnight"
+  >
+    <!-- TOP UTILITY / ANNOUNCEMENT BAR (FLAT) -->
+    <div class="bg-brand-midnight text-white text-xs sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2.5 text-center sm:text-left"
+      >
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+          <span
+            class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-brand-blue text-brand-midnight"
+          >
+            Exhibition Alert
+          </span>
+          <span class="text-slate-300">
+            Meet us at <strong>Gujarat WOSH 2026</strong> · Aarana Lawns,
+            Vadodara · <strong>Stall no. 47 &amp; 48</strong>
+          </span>
+        </div>
+        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4 text-slate-300">
+          <img
+            src="Asset/top bar 1.png"
+            alt="Market Distribution Partner - Calliber's Safety Solutions LLP"
+            class="h-6 sm:h-7 w-auto object-contain"
+          />
+          <span class="text-white/20 hidden md:inline">|</span>
+          <a
+            href="tel:+919225008576"
+            class="flex items-center gap-1.5 hover:text-brand-blue transition"
+          >
+            <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
+            <span class="font-bold">+91 92250 08576</span>
+          </a>
+          <span class="text-white/20 hidden md:inline">|</span>
+          <a
+            href="mailto:info@calliberssafety.com"
+            class="hidden md:flex items-center gap-1.5 hover:text-brand-blue transition"
+          >
+            <i class="fa-regular fa-envelope text-brand-blue text-xs"></i>
+            <span>info@calliberssafety.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION HEADER (FLAT, NO BORDERS, NO BLURS) -->
+    <header class="bg-white sticky top-[37px] z-40">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between"
+      >
+        <!-- Vaultex Logo -->
+        <a
+          href="#hero"
+          class="flex items-center gap-3 group"
+          aria-label="Vaultex Safety Footwear"
+        >
+          <img
+            src="Asset/Vaultex logo.png"
+            alt="Vaultex - Your Safety Is In Safe Hands"
+            class="h-16 w-auto object-contain transition group-hover:opacity-90"
+          />
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav
+          class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700"
+        >
+           <a href="#products" class="hover:text-brand-blue transition"
+            >Footwear Range</a
+          >
+          <a href="#brand" class="hover:text-brand-blue transition"
+            >Know Vaultex</a
+          >
+       
+          <a href="#dealership" class="hover:text-brand-blue transition"
+            >Dealership &amp; Support</a
+          >
+          <a href="#accelerator" class="hover:text-brand-blue transition"
+            >Rewards Program</a
+          >
+          <a href="#exhibition" class="hover:text-brand-blue transition"
+            >Gujarat WOSH</a
+          >
+          <a href="#faqs" class="hover:text-brand-blue transition">FAQs</a>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <!-- <a href="tel:+919225008576"
+                    class="px-4 py-2.5 text-xs font-bold text-brand-midnight hover:text-brand-blue transition flex items-center gap-1.5">
+                    <span>Call Us</span>
+                </a> -->
+          <button
+            onclick="openModal()"
+            class="px-5 py-2.5 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+          >
+            Enquire Dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1 text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobileMenuBtn"
+          class="lg:hidden p-2 rounded-lg bg-surface-subtle text-brand-midnight focus:outline-none"
+          aria-label="Toggle Navigation Menu"
+        >
+          <i
+            id="menuIconOpen"
+            class="fa-regular fa-bars text-xl"
+          ></i>
+          <i
+            id="menuIconClose"
+            class="fa-regular fa-xmark text-xl hidden"
+          ></i>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer Menu (Flat) -->
+      <div
+        id="mobileMenu"
+        class="hidden lg:hidden bg-white px-5 py-6 space-y-4"
+      >
+        <nav class="flex flex-col space-y-3 text-base font-bold text-slate-800">
+          <a href="#brand" class="mobile-nav-link hover:text-brand-blue py-1"
+            >Know Vaultex</a
+          >
+          <a href="#products" class="mobile-nav-link hover:text-brand-blue py-1"
+            >Footwear Range</a
+          >
+          <a
+            href="#dealership"
+            class="mobile-nav-link hover:text-brand-blue py-1"
+            >Dealership &amp; Support</a
+          >
+          <a
+            href="#accelerator"
+            class="mobile-nav-link hover:text-brand-blue py-1"
+            >Growth Accelerator Program</a
+          >
+          <a
+            href="#exhibition"
+            class="mobile-nav-link hover:text-brand-blue py-1"
+            >Gujarat WOSH 2026</a
+          >
+          <a href="#faqs" class="mobile-nav-link hover:text-brand-blue py-1"
+            >FAQs</a
+          >
+        </nav>
+        <div class="pt-4 flex flex-col gap-3">
+          <button
+            onclick="
+              openModal();
+              toggleMobileMenu();
+            "
+            class="w-full py-3 rounded-xl bg-brand-blue text-brand-midnight text-center font-semibold uppercase text-xs tracking-wider"
+          >
+            Enquire About Dealership
+          </button>
+          <a
+            href="tel:+919225008576"
+            class="w-full py-2.5 rounded-xl bg-surface-subtle text-center text-xs font-bold text-slate-700"
+          >
+            Call +91 92250 08576
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================================================================
+         SECTION 1: HERO & INQUIRY FORM (ABOVE THE FOLD, PURE SOLID FLAT)
+         Content from: Landing Page Content - Vaultex.md Section 1
+         ========================================================================= -->
+      <section id="hero" class="bg-surface-subtle py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+          >
+            <!-- LEFT HERO CONTENT -->
+            <div class="lg:col-span-7">
+              <!-- Calling Dealers Badge (Flat) -->
+              <div
+                class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white text-xs font-bold text-brand-midnight mb-6"
+              >
+                <span
+                  class="relative flex h-2.5 w-2.5 shrink-0 items-center justify-center"
+                >
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2 w-2 bg-brand-blue badge-glow-dot"
+                  ></span>
+                </span>
+                <span
+                  >Calling dealers of safety equipment, industrial tools, safety
+                  shoes &amp; hardware across India</span
+                >
+              </div>
+
+              <!-- Main Headline -->
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-6 lg:gap-8"
+              >
+                <div class="flex-1">
+                  <h1
+                    class="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.1] tracking-tight text-brand-midnight"
+                  >
+                    Received Interests from More than a 100 Dealers across Gujarat.<br />
+                    <span class="text-brand-blue">Why stay behind - Fill in your interest now.</span>
+                  </h1>
+
+                  <p
+                    class="mt-5 text-base text-slate-600 leading-relaxed max-w-xl"
+                  >
+                    Explore the Vaultex safety footwear range, discover
+                    dealership opportunities and meet the team at
+                    <strong>Gujarat WOSH 2026</strong>.
+                  </p>
+                </div>
+
+                <!-- Hero Shoe Photograph -->
+                <!-- <div class="hidden sm:flex shrink-0 w-40 lg:w-48 items-center justify-center">
+                <img src="Asset/shoe (6).png" alt="Vaultex safety footwear" style="animation: floatShoe 4s ease-in-out infinite;" class="w-full h-auto object-contain" />
+              </div> -->
+              </div>
+
+              <!-- Event Highlight Box (Flat) -->
+              <div
+                class="mt-8 p-5 rounded-2xl bg-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 max-w-2xl"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-16 h-12 rounded-xl bg-brand-midnight flex flex-col items-center justify-center text-white shrink-0"
+                  >
+                    <span
+                      class="text-[10px] uppercase font-bold text-brand-blue leading-none"
+                      >Nov</span
+                    >
+                    <span
+                      class="text-xs font-semibold leading-tight whitespace-nowrap"
+                      >20–21</span
+                    >
+                  </div>
+                  <div>
+                    <div
+                      class="text-xs font-extrabold uppercase tracking-wider text-brand-blue"
+                    >
+                      Exhibition Venue
+                    </div>
+                    <div class="text-sm font-semibold text-brand-midnight">
+                      Aarana Lawns, Vadodara, Gujarat
+                    </div>
+                    <div class="text-xs font-bold text-slate-500">
+                      20–21 November 2026
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="px-4 py-2 rounded-xl bg-brand-blue-light text-center sm:text-right shrink-0"
+                >
+                  <span
+                    class="block text-[10px] font-semibold uppercase text-brand-midnight tracking-wider"
+                    >Meet Our Team</span
+                  >
+                  <span class="text-sm font-semibold text-brand-blue-dark"
+                    >Stall no. 47 &amp; 48</span
+                  >
+                </div>
+              </div>
+
+              <!-- CTAs -->
+              <div
+                class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+              >
+                <a
+                  href="#heroForm"
+                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-sm font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center"
+                >
+                  Enquire about dealership <i class="fa-regular fa-arrow-right ml-1"></i>
+                </a>
+                <a
+                  href="/Asset/Vaultex_Updated.pdf"
+                  class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-sm font-bold hover:text-brand-blue transition text-center"
+                >
+                  Download Brochure <i class="fa-regular fa-arrow-down ml-1"></i>
+                </a>
+              </div>
+
+              <!-- Speak with us -->
+              <div class="mt-6 flex items-center gap-2 text-sm text-slate-600">
+                <span>Prefer to speak with us?</span>
+                <a
+                  href="tel:+919225008576"
+                  class="font-extrabold text-brand-midnight hover:text-brand-blue transition flex items-center gap-1.5"
+                >
+                  <span>Call +91 92250 08576</span>
+                  <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
+                </a>
+              </div>
+
+              <!-- Key Trust Badges -->
+              <div
+                class="mt-8 pt-6 flex flex-wrap gap-y-2 gap-x-6 text-xs font-semibold text-slate-600"
+              >
+                <span class="flex items-center gap-2"
+                  ><i class="fa-regular fa-circle-check text-emerald-600 text-sm"></i>
+                  20+ Years Manufacturing Since 2003</span
+                >
+                <span class="flex items-center gap-2"
+                  ><i class="fa-regular fa-circle-check text-emerald-600 text-sm"></i>
+                  70,000 Sq. Ft. Facility</span
+                >
+                <span class="flex items-center gap-2"
+                  ><i class="fa-regular fa-circle-check text-emerald-600 text-sm"></i>
+                  BIS &amp; CE Quality Compliance</span
+                >
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: INQUIRY FORM (Above the Fold, Flat Card) -->
+            <div class="lg:col-span-5">
+              <div
+                id="heroForm"
+                class="rounded-[1.75rem] bg-white p-6 sm:p-8 scroll-mt-28"
+              >
+                <!-- Header tag -->
+                <div class="pb-5 mb-5">
+                  <span
+                    class="inline-block text-[11px] font-semibold uppercase tracking-widest text-brand-blue"
+                  >
+                    Distributor · Wholesalers · Bulk Orders
+                  </span>
+                  <h2 class="text-2xl font-semibold text-brand-midnight mt-1">
+                    Let’s explore the opportunity.
+                  </h2>
+                  <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                    Share your details to connect with our team about a Vaultex
+                    dealership.
+                  </p>
+                </div>
+
+                <!-- Form fields (Flat inputs) -->
+                <form
+                  id="leadCaptureForm"
+                  onsubmit="handleFormSubmit(event, 'heroFormMessage')"
+                  class="space-y-4"
+                >
+                  <div>
+                    <label
+                      class="block text-xs font-bold text-brand-midnight mb-1.5"
+                      >Full name *</label
+                    >
+                    <input
+                      type="text"
+                      name="fullName"
+                      required
+                      placeholder="Enter your full name"
+                      class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-xs font-bold text-brand-midnight mb-1.5"
+                      >Business name *</label
+                    >
+                    <input
+                      type="text"
+                      name="businessName"
+                      required
+                      placeholder="Company or firm name"
+                      class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-xs font-bold text-brand-midnight mb-1.5"
+                      >Mobile number *</label
+                    >
+                    <input
+                      type="tel"
+                      name="mobileNumber"
+                      required
+                      pattern="[0-9+ ]{10,15}"
+                      placeholder="10-digit mobile number"
+                      class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-xs font-bold text-brand-midnight mb-1.5"
+                      >City and state *</label
+                    >
+                    <input
+                      type="text"
+                      name="cityState"
+                      required
+                      placeholder="e.g. Ahmedabad, Gujarat"
+                      class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input placeholder:text-slate-400 focus:bg-brand-blue-light transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="block text-xs font-bold text-brand-midnight mb-1.5"
+                      >Business category *</label
+                    >
+                    <select
+                      name="businessCategory"
+                      required
+                      class="w-full px-4 py-3 text-sm rounded-xl bg-surface-input text-slate-700 focus:bg-brand-blue-light transition"
+                    >
+                      <option value="">Select your business category</option>
+                      <option value="Safety equipment">Safety equipment</option>
+                      <option value="Industrial tools">Industrial tools</option>
+                      <option value="Safety shoes">Safety shoes</option>
+                      <option value="Hardware">Hardware</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <!-- Consent Checkbox -->
+                  <div class="pt-1">
+                    <label
+                      class="flex items-start gap-2.5 text-[11px] leading-snug text-slate-500 cursor-pointer"
+                    >
+                      <input
+                        type="checkbox"
+                        name="consent"
+                        required
+                        class="mt-0.5 rounded text-brand-blue"
+                      />
+                      <span
+                        >By submitting, you agree to be contacted by Calliber's
+                        Safety Solutions LLP regarding your dealership enquiry.
+                        View our
+                        <a
+                          href="#"
+                          class="underline hover:text-brand-blue transition"
+                          >privacy policy</a
+                        >. *</span
+                      >
+                    </label>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button
+                    type="submit"
+                    class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-semibold uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200 flex items-center justify-center gap-2"
+                  >
+                    <span>Submit Business Enquiry</span>
+                    <i class="fa-regular fa-paper-plane text-xs"></i>
+                  </button>
+                </form>
+
+                <!-- Success Alert Placeholder -->
+                <div
+                  id="heroFormMessage"
+                  class="hidden mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs"
+                >
+                  <strong>Thank you!</strong> Your enquiry has been received.
+                  Our dealership team from Calliber's Safety Solutions LLP will
+                  get in touch with you shortly.
+                </div>
+
+                <div
+                  class="mt-4 pt-3 flex items-center justify-end text-[11px] text-slate-400"
+                >
+                  <a
+                    href="tel:+919225008576"
+                    class="hover:text-brand-blue font-semibold text-slate-500"
+                    >Need immediate help? Call us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- add here this section  -->
+      <!-- =========================================================================
+         SECTION 2: EXHIBITION INVITATION (GUJARAT WOSH 2026)
+         Content from: Landing Page Content - Vaultex.md Section 6
+         ========================================================================= -->
+      <section id="exhibition" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left: Invitation Details -->
+            <div class="lg:col-span-5">
+              <div
+                class="rounded-3xl bg-brand-midnight text-white p-2 relative"
+              >
+                <img
+                  src="/Asset/poster.jpeg"
+                  alt="Meet at gujarat Wosh 2026 at Stall no 47 & 48"
+                  class="rounded-2xl"
+                />
+              </div>
+            </div>
+            <!-- Right: VIP Exhibition Badge Card (Flat) -->
+
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+              >
+                Exhibition Invitation
+              </div>
+
+              <h2
+                class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold text-brand-midnight tracking-tight"
+              >
+                See the footwear. Meet the people. Explore the possibilities.
+              </h2>
+
+              <p class="mt-4 text-base text-slate-600 leading-relaxed">
+                Join us at <strong>Gujarat WOSH 2026</strong> for a conversation
+                about your business and Vaultex dealership opportunities.
+              </p>
+
+              <div class="mt-6">
+                <h3
+                  class="text-sm font-semibold uppercase tracking-wider text-brand-midnight mb-3"
+                >
+                  At our stall, you can:
+                </h3>
+                <ul class="space-y-2.5 text-slate-700 text-sm">
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Explore the Vaultex footwear range in person, inspecting
+                      materials, stitching, and soles.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Discuss products specifically matched to your customer
+                      base and industry demands.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Learn about dealership opportunities and support
+                      available to partners.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Discover the dealer growth accelerator program, rewards,
+                      and eligibility tiers.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button
+                  onclick="openModal()"
+                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+                >
+                  Enquire before your visit <i class="fa-regular fa-arrow-right ml-1"></i>
+                </button>
+                <a
+                  href="tel:+919225008576"
+                  class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-brand-blue transition flex items-center gap-2"
+                >
+                  <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
+                  <span>Call +91 92250 08576</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         SECTION 3: EXPLORE THE RANGE (PRODUCTS)
+         Content from: Landing Page Content - Vaultex.md Section 3
+         ========================================================================= -->
+      <section id="products" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Header -->
+          <div class="max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+            >
+              Product Portfolio
+            </div>
+            <h2
+              class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold text-brand-midnight tracking-tight"
+            >
+              Explore the range. Find your next business opportunity.
+            </h2>
+            <p class="mt-4 text-base text-slate-600 leading-relaxed">
+              Discover a selection of Vaultex footwear, from classic workwear
+              styles to contemporary designs. Speak with our team about the
+              models relevant to your customers.
+            </p>
+          </div>
+
+          <!-- Filter Tags (Flat) -->
+          <div class="mt-8 flex flex-wrap gap-2.5">
+            <button
+              class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-brand-midnight text-white"
+              data-filter="all"
+            >
+              All Models (8)
+            </button>
+            <button
+              class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue"
+              data-filter="classic"
+            >
+              Classic &amp; Slip-On
+            </button>
+            <button
+              class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue"
+              data-filter="sporty"
+            >
+              Sporty &amp; Lightweight
+            </button>
+            <button
+              class="product-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white text-slate-700 hover:text-brand-blue"
+              data-filter="heavy"
+            >
+              Heavy-Duty &amp; EX DD
+            </button>
+          </div>
+
+          <!-- PRODUCT GRID (Exact 8 models from Landing Page Content, Flat Cards) -->
+          <div
+            class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            <!-- 1. Vaultex Epic 051 -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="sporty"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Sporty series
+                </span>
+                <img
+                  src="Asset/shoe (6).png"
+                  alt="Vaultex Epic 051"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Epic 051
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Athletic silhouette with toe protection and a cushioning
+                  outsole, designed for active industrial use.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Model #051</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Epic 051')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Vaultex Eves -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="classic"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-subtle text-slate-700 text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Slip-on style
+                </span>
+                <img
+                  src="Asset/shoe (5).png"
+                  alt="Vaultex Eves"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Eves
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Laceless slip-on industrial safety shoe for quick fitting and
+                  all-day comfort in active work environments.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Slip-on series</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Eves')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Vaultex Tic Toc -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="sporty"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-blue text-brand-midnight text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Breathable mesh
+                </span>
+                <img
+                  src="Asset/shoe (9).png"
+                  alt="Vaultex Tic Toc"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Tic Toc
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Knitted mesh upper designed for warm industrial settings,
+                  warehouses, and logistics environments.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Knit series</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Tic Toc')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Vaultex MF-1010 (Black) -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="classic"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Classic workwear
+                </span>
+                <img
+                  src="Asset/shoe (8).png"
+                  alt="Vaultex MF-1010 (Black)"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex MF-1010 (Black)
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Classic industrial safety shoe built for demanding work
+                  environments. Speak with our team about specifications.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >MF series</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex MF-1010 (Black)')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Vaultex Lite -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="sporty"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-subtle text-slate-700 text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Ultra light
+                </span>
+                <img
+                  src="Asset/shoe (4).png"
+                  alt="Vaultex Lite"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Lite
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Reduced-weight protective design engineered for all-day
+                  comfort and flexible foot movement.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Lite series</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Lite')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Vaultex Ultra Pro (CIP - D/D) -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="heavy"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  CIP heavy duty
+                </span>
+                <img
+                  src="Asset/shoe (3).png"
+                  alt="Vaultex Ultra Pro (CIP - D/D)"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Ultra Pro (CIP - D/D)
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Heavy-duty safety footwear built for demanding industrial
+                  plants and high-wear conditions.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >CIP dual density</span
+                  >
+                  <button
+                    onclick="
+                      openModalWithModel('Vaultex Ultra Pro (CIP - D/D)')
+                    "
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Vaultex Boxer Sporty DD EX -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="heavy"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-blue text-brand-midnight text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Suede &amp; leather
+                </span>
+                <img
+                  src="Asset/shoe (7).png"
+                  alt="Vaultex Boxer Sporty DD EX"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Boxer Sporty DD EX
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Suede leather hybrid with reinforced toe bumper and padded
+                  collar for industrial use.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Boxer DD EX</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Boxer Sporty DD EX')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Vaultex Stellar EX DD -->
+            <div
+              class="product-item shoe-card group rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-300"
+              data-cat="heavy"
+            >
+              <div
+                class="relative bg-surface-subtle p-4 h-64 flex items-center justify-center overflow-hidden"
+              >
+                <span
+                  class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-midnight text-white text-[10px] font-semibold uppercase tracking-wider"
+                >
+                  Dual tone sole
+                </span>
+                <img
+                  src="Asset/shoe (2).png"
+                  alt="Vaultex Stellar EX DD"
+                  class="h-full w-auto object-contain"
+                />
+              </div>
+              <div class="p-5">
+                <h3
+                  class="text-base font-semibold text-brand-midnight group-hover:text-brand-blue transition"
+                >
+                  Vaultex Stellar EX DD
+                </h3>
+                <p class="mt-1.5 text-sm text-slate-500 leading-relaxed">
+                  Premium grain leather with dual density PU sole and ergonomic
+                  support for long working hours.
+                </p>
+                <div class="mt-4 pt-3 flex items-center justify-between">
+                  <span class="text-[11px] font-medium text-slate-400"
+                    >Stellar EX DD</span
+                  >
+                  <button
+                    onclick="openModalWithModel('Vaultex Stellar EX DD')"
+                    class="text-sm font-medium text-brand-blue hover:text-brand-midnight transition"
+                  >
+                    Enquire model <i class="fa-regular fa-arrow-right ml-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3 Bottom Banner Callout (Flat) -->
+          <div
+            class="mt-12 p-8 rounded-3xl bg-brand-midnight text-white flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <div>
+              <span
+                class="text-xs font-semibold uppercase tracking-widest text-brand-blue"
+                >Interested in a model?</span
+              >
+              <h3 class="text-2xl sm:text-3xl font-semibold mt-1">
+                Interested in a model? Let’s discuss it.
+              </h3>
+              <p class="mt-2 text-sm text-slate-300 max-w-2xl">
+                Enquire about the range, available specifications and dealership
+                opportunities with our official distribution team.
+              </p>
+            </div>
+            <button
+              onclick="openModal()"
+              class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+            >
+              Enquire about dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 2: KNOW YOUR BRAND: VAULTEX | SINCE 2003
+         Content from: Landing Page Content - Vaultex.md Section 2
+         ========================================================================= -->
+      <section id="brand" class="py-16 bg-surface-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Text Narrative -->
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+              >
+                Know Your Brand: Vaultex | Since 2003
+              </div>
+
+              <h2
+                class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold text-brand-midnight tracking-tight"
+              >
+                Over two decades of moving safety forward.
+              </h2>
+
+              <div
+                class="mt-6 space-y-4 text-slate-600 text-base leading-relaxed"
+              >
+                <p>
+                  Since its introduction in 2003, Vaultex has grown from its
+                  manufacturing base in India to supply industrial safety
+                  footwear to customers worldwide.
+                </p>
+                <p>
+                  With a
+                  <strong
+                    >70,000 sq. ft. production facility in Greater Noida</strong
+                  >, the brand brings together footwear design, prototype
+                  development, manufacturing, and quality inspection. From
+                  stitching the uppers to finishing and packaging, the brand
+                  produces in-house, allowing close oversight throughout the
+                  process.
+                </p>
+                <p>
+                  Quality checks extend beyond the finished shoe. Vaultex
+                  monitors technical specifications through development and
+                  production, with batch testing at its in-house facility
+                  against applicable <strong>BIS and CE parameters</strong>. For
+                  dealers, this is an opportunity to explore a footwear brand
+                  backed by manufacturing experience, an established product
+                  range, and an international distributor network.
+                </p>
+                <p class="font-extrabold text-brand-midnight text-lg">
+                  A legacy you can be part of.
+                </p>
+                <p>
+                  Discover the range and discuss your next business opportunity
+                  with our team at Gujarat WOSH 2026.
+                </p>
+              </div>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button
+                  onclick="openModal()"
+                  class="px-7 py-3.5 rounded-xl bg-brand-midnight text-white text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue hover:text-brand-midnight transition duration-200"
+                >
+                  Explore dealership opportunities <i class="fa-regular fa-arrow-right ml-1.5 text-xs"></i>
+                </button>
+                <a
+                  href="#products"
+                  class="px-6 py-3.5 rounded-xl bg-surface-subtle text-brand-midnight text-xs font-bold hover:text-brand-blue transition"
+                >
+                  View Shoe Models
+                </a>
+              </div>
+            </div>
+
+            <!-- Manufacturing & Quality Proof Pillars (Flat) -->
+            <div class="lg:col-span-5 space-y-4">
+              <!-- Pillar 1 -->
+              <div class="p-6 rounded-2xl bg-surface-subtle">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-brand-blue/15 text-brand-blue-dark grid place-items-center font-semibold text-xl shrink-0"
+                  >
+                    70K
+                  </div>
+                  <div>
+                    <h3 class="text-base font-semibold text-brand-midnight">
+                      70,000 Sq. Ft. Facility
+                    </h3>
+                    <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                      Integrated manufacturing campus in Greater Noida handling
+                      upper stitching, sole molding, finishing, and packaging
+                      in-house.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="p-6 rounded-2xl bg-surface-subtle">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-brand-midnight text-brand-blue grid place-items-center font-bold text-lg shrink-0"
+                  >
+                    BIS
+                  </div>
+                  <div>
+                    <h3 class="text-base font-semibold text-brand-midnight">
+                      BIS &amp; CE Quality Parameter Testing
+                    </h3>
+                    <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                      Rigorous in-house batch testing monitors impact
+                      resistance, slip resistance, sole bond strength, and
+                      technical durability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pillar 3 -->
+              <div class="p-6 rounded-2xl bg-surface-subtle">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-brand-blue/15 text-brand-blue-dark grid place-items-center font-bold text-lg shrink-0"
+                  >
+                    20+
+                  </div>
+                  <div>
+                    <h3 class="text-base font-semibold text-brand-midnight">
+                      Over Two Decades of Innovation
+                    </h3>
+                    <p class="mt-1 text-xs text-slate-500 leading-relaxed">
+                      Serving international and domestic markets since 2003 with
+                      an expanding distributor footprint and robust inventory
+                      backing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Callout Note -->
+              <div
+                class="p-5 rounded-2xl bg-brand-midnight text-white text-xs leading-relaxed flex items-center gap-3"
+              >
+                <i class="fa-regular fa-star text-brand-blue text-xl shrink-0"></i>
+                <span>
+                  Meet the team at
+                  <strong>Stall no. 47 &amp; 48, Gujarat WOSH 2026</strong> to
+                  discuss dealership opportunities.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 4: DEALERSHIP OPPORTUNITY AND SUPPORT
+         Content from: Landing Page Content - Vaultex.md Section 4
+         ========================================================================= -->
+      <section id="dealership" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+            >
+              Dealership Opportunity and Support
+            </div>
+            <h2
+              class="text-3xl sm:text-5xl lg:text-[2.85rem] font-bold text-brand-midnight tracking-tight"
+            >
+              A new range for your business.<br />A team to discuss it with.
+            </h2>
+            <p class="mt-4 text-base text-slate-600 leading-relaxed">
+              Whether you deal in safety equipment, industrial tools, safety
+              shoes or hardware, we invite you to explore Vaultex dealership
+              opportunities.
+            </p>
+          </div>
+
+          <!-- 3 Pillars Grid (Flat) -->
+          <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pillar 1 -->
+            <div class="p-8 rounded-3xl bg-surface-subtle">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6"
+              >
+                <i class="fa-regular fa-boxes-stacked text-2xl text-brand-blue"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-brand-midnight">
+                Explore the product range
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                Discuss footwear models and specifications relevant to your
+                customer base. From entry-level industrial requirements to
+                premium executive workwear.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="p-8 rounded-3xl bg-surface-subtle">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6"
+              >
+                <i class="fa-regular fa-handshake text-2xl text-brand-blue"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-brand-midnight">
+                Connect with our team
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                Tell us about your business, location, and customers so we can
+                discuss the opportunity with you, aligning territories and
+                commercial terms.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="p-8 rounded-3xl bg-surface-subtle">
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-midnight text-brand-blue grid place-items-center mb-6"
+              >
+                <i class="fa-regular fa-shield-halved text-2xl text-brand-blue"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-brand-midnight">
+                Discover dealer support
+              </h3>
+              <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                Learn about the dealer program support available and how to get
+                started. Our team can walk you through the details.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dealership inquiries welcome across India (Flat) -->
+          <div class="mt-12 text-center">
+            <div
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-subtle text-sm font-semibold text-brand-midnight"
+            >
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Dealership inquiries welcome from across India.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 5: GROWTH ACCELERATOR PROGRAM
+         Content from: Landing Page Content - Vaultex.md Section 5
+         ========================================================================= -->
+      <section id="accelerator" class="py-16 bg-surface-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+            >
+              Exclusive dealer growth accelerator program
+            </div>
+            <h2
+              class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold tracking-tight text-brand-midnight"
+            >
+              Your business. Your growth. Your choice of rewards.
+            </h2>
+            <p class="mt-4 text-base text-slate-600 leading-relaxed">
+              Explore a program that brings together business benefits and
+              rewards for eligible dealers.
+            </p>
+          </div>
+
+          <!-- Reward Choices Cards Grid (Flat) -->
+          <div
+            class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            <!-- Reward 1: Cash Discounts -->
+            <div
+              class="p-6 rounded-2xl bg-white hover:bg-brand-blue-light transition group"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-brand-blue-light text-brand-blue grid place-items-center text-xl font-bold mb-4"
+              >
+                <i class="fa-regular fa-indian-rupee-sign text-xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-brand-midnight">
+                Cash discounts
+              </h3>
+              <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+                Discuss available benefits and qualifying targets with our team.
+              </p>
+            </div>
+
+            <!-- Reward 2: Turnover Discounts -->
+            <div
+              class="p-6 rounded-2xl bg-white hover:bg-brand-blue-light transition group"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-brand-blue-light text-brand-blue grid place-items-center text-xl font-bold mb-4"
+              >
+                <i class="fa-regular fa-percent text-xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-brand-midnight">
+                Turnover discounts
+              </h3>
+              <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+                Discuss available benefits and qualifying targets with our team.
+              </p>
+            </div>
+
+            <!-- Reward 3: Sponsored Trips -->
+            <div
+              class="p-6 rounded-2xl bg-white hover:bg-brand-blue-light transition group"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-brand-blue-light text-brand-blue grid place-items-center text-xl mb-4"
+              >
+                <i class="fa-regular fa-plane text-xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-brand-midnight">
+                Sponsored trips
+              </h3>
+              <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+                Discuss available benefits and qualifying targets with our team.
+              </p>
+            </div>
+
+            <!-- Reward 4: Premium Smartphones -->
+            <div
+              class="p-6 rounded-2xl bg-white hover:bg-brand-blue-light transition group"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-brand-blue-light text-brand-blue grid place-items-center text-xl mb-4"
+              >
+                <i class="fa-regular fa-mobile-screen text-xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-brand-midnight">
+                Premium smartphones
+              </h3>
+              <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+                Discuss available benefits and qualifying targets with our team.
+              </p>
+            </div>
+          </div>
+
+          <!-- Punchline Banner (Flat) -->
+          <div
+            class="mt-12 p-8 rounded-3xl bg-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-6"
+          >
+            <div>
+              <div
+                class="text-2xl sm:text-3xl font-semibold text-brand-midnight"
+              >
+                You get to choose what you want!
+              </div>
+              <p class="mt-2 text-sm text-slate-500">
+                Meet our team at <strong>stall no. 47 &amp; 48</strong> to
+                discuss the program, available choices and eligibility.
+              </p>
+              <p class="mt-1 text-[11px] text-slate-500 italic">
+                *Program eligibility, targets and terms apply.
+              </p>
+            </div>
+
+            <button
+              onclick="openModal()"
+              class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+            >
+              Enquire about the program <i class="fa-regular fa-arrow-right ml-1.5 text-xs"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 6: EXHIBITION INVITATION (GUJARAT WOSH 2026)
+         Content from: Landing Page Content - Vaultex.md Section 6
+         ========================================================================= -->
+      <section id="exhibition" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left: Invitation Details -->
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+              >
+                Exhibition Invitation
+              </div>
+
+              <h2
+                class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold text-brand-midnight tracking-tight"
+              >
+                See the footwear. Meet the people. Explore the possibilities.
+              </h2>
+
+              <p class="mt-4 text-base text-slate-600 leading-relaxed">
+                Join us at <strong>Gujarat WOSH 2026</strong> for a conversation
+                about your business and Vaultex dealership opportunities.
+              </p>
+
+              <div class="mt-6">
+                <h3
+                  class="text-sm font-semibold uppercase tracking-wider text-brand-midnight mb-3"
+                >
+                  At our stall, you can:
+                </h3>
+                <ul class="space-y-2.5 text-slate-700 text-sm">
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Explore the Vaultex footwear range in person, inspecting
+                      materials, stitching, and soles.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Discuss products specifically matched to your customer
+                      base and industry demands.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Learn about dealership opportunities and support
+                      available to partners.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <span
+                      >Discover the dealer growth accelerator program, rewards,
+                      and eligibility tiers.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button
+                  onclick="openModal()"
+                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+                >
+                  Enquire before your visit <i class="fa-regular fa-arrow-right ml-1"></i>
+                </button>
+                <a
+                  href="tel:+919225008576"
+                  class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-brand-blue transition flex items-center gap-2"
+                >
+                  <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
+                  <span>Call +91 92250 08576</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: VIP Exhibition Badge Card (Flat) -->
+            <div class="lg:col-span-5">
+              <div
+                class="rounded-3xl bg-brand-midnight text-white p-8 relative"
+              >
+                <div class="flex items-center justify-between pb-5">
+                  <div>
+                    <span
+                      class="text-[10px] font-semibold uppercase tracking-widest text-brand-blue"
+                      >Official Invitation</span
+                    >
+                    <div class="text-2xl font-semibold text-white mt-1">
+                      Gujarat WOSH 2026
+                    </div>
+                  </div>
+                  <div
+                    class="px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs font-extrabold uppercase tracking-wider"
+                  >
+                    B2B Trade Meet
+                  </div>
+                </div>
+
+                <div class="mt-6 space-y-5">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-brand-blue text-brand-midnight grid place-items-center font-semibold shrink-0"
+                    >
+                      <i class="fa-regular fa-calendar-days text-brand-midnight text-lg"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-slate-400 uppercase">
+                        Dates
+                      </div>
+                      <div class="text-base font-semibold text-white">
+                        20–21 November 2026
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-brand-blue text-brand-midnight grid place-items-center font-semibold shrink-0"
+                    >
+                      <i class="fa-regular fa-location-dot text-brand-midnight text-lg"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-slate-400 uppercase">
+                        Venue Location
+                      </div>
+                      <div class="text-base font-semibold text-white">
+                        Aarana Lawns, Vadodara, Gujarat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-4 rounded-2xl bg-white/[0.08] flex items-center justify-between"
+                  >
+                    <div>
+                      <span
+                        class="text-[10px] font-semibold uppercase tracking-wider text-brand-blue"
+                        >Exhibition Location</span
+                      >
+                      <div class="text-xl font-semibold text-white">
+                        Stall no. 47 &amp; 48
+                      </div>
+                    </div>
+                    <span
+                      class="px-3 py-1 rounded-full bg-brand-blue text-brand-midnight font-semibold text-xs"
+                    >
+                      Vaultex Team
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-5 text-center">
+                  <p class="text-xs text-slate-400">
+                    Pre-book a direct 1-on-1 meeting slot with our leadership
+                    team before the exhibition starts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 7: FAQS
+         Content from: Landing Page Content - Vaultex.md Section 7
+         ========================================================================= -->
+      <section id="faqs" class="py-16 bg-surface-input">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+            >
+              Frequently Asked Questions
+            </div>
+            <h2
+              class="text-3xl sm:text-5xl font-bold text-brand-midnight tracking-tight"
+            >
+              A few things you may want to know
+            </h2>
+            <p class="mt-3 text-sm text-slate-500 max-w-xl mx-auto">
+              These answers guide your enquiry; the sales team can discuss
+              specific commercial and dealership terms directly.
+            </p>
+          </div>
+
+          <!-- FAQ Items (Exact 6 questions from content doc, Flat) -->
+          <div class="mt-12 space-y-4">
+            <!-- FAQ 1 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span>Who is this opportunity for?</span>
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                We welcome inquiries from dealers of safety equipment,
+                industrial tools, safety shoes, and hardware who are interested
+                in the Vaultex footwear range.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span>Can dealers from outside Gujarat enquire?</span>
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                Yes. Dealership inquiries are welcome from across India.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span>How can I discuss dealership details?</span>
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                Submit the inquiry form, call +91 92250 08576, or meet our team
+                at stall no. 47 &amp; 48 at Gujarat WOSH 2026. We can discuss
+                your business and the dealership details directly.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span>Is dealer support available?</span>
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                Yes. Dealer program support will be available. Speak with our
+                team to understand the support offered.
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span
+                  >Where can I learn about the growth accelerator program?</span
+                >
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                Visit our stall to discuss the program, reward choices,
+                eligibility, and applicable terms.
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div
+              class="faq-item rounded-2xl bg-surface-subtle overflow-hidden transition-all duration-200"
+            >
+              <button
+                onclick="toggleFaq(this)"
+                class="w-full px-6 py-5 flex items-center justify-between gap-4 text-left font-semibold text-base text-brand-midnight focus:outline-none"
+              >
+                <span>Can I enquire before the exhibition?</span>
+                <i
+                  class="fa-regular fa-plus faq-icon text-xl text-brand-blue transition-transform duration-300 shrink-0"
+                ></i>
+              </button>
+              <div
+                class="faq-answer px-6 pb-5 text-sm text-slate-600 leading-relaxed pt-1"
+              >
+                Yes. Share your details through the form or contact our team to
+                start the conversation before your visit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SECTION 8: FINAL CTA & CONTACT / FOOTER
+         Content from: Landing Page Content - Vaultex.md Section 8
+         ========================================================================= -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="rounded-3xl bg-brand-midnight text-white p-8 sm:p-12 lg:p-14"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div class="lg:col-span-8">
+                <span
+                  class="text-xs font-semibold uppercase tracking-wider text-brand-blue"
+                  >Next Steps</span
+                >
+                <h2
+                  class="text-3xl sm:text-5xl lg:text-[2.65rem] font-bold tracking-tight text-white mt-2"
+                >
+                  Let’s talk about your next step with Vaultex.
+                </h2>
+                <p
+                  class="mt-4 text-slate-300 text-base leading-relaxed max-w-2xl"
+                >
+                  Tell us about your business and explore the opportunity to add
+                  Vaultex safety footwear to your range.
+                </p>
+
+                <!-- Contact & Event Details Grid (Flat) -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
+                  <!-- Direct Contacts -->
+                  <div class="space-y-3">
+                    <div
+                      class="text-xs font-bold uppercase tracking-wider text-brand-blue"
+                    >
+                      Direct Contact
+                    </div>
+                    <div class="text-sm">
+                      <span class="text-slate-400">Call:</span>
+                      <a
+                        href="tel:+919225008576"
+                        class="font-semibold text-white hover:text-brand-blue transition ml-1"
+                        >+91 92250 08576</a
+                      >
+                    </div>
+                    <div class="text-sm">
+                      <span class="text-slate-400">Email:</span>
+                      <a
+                        href="mailto:info@calliberssafety.com"
+                        class="font-semibold text-white hover:text-brand-blue transition ml-1"
+                        >info@calliberssafety.com</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Event Details -->
+                  <div class="space-y-2">
+                    <div
+                      class="text-xs font-bold uppercase tracking-wider text-brand-blue"
+                    >
+                      Meet us at Gujarat WOSH 2026
+                    </div>
+                    <div class="text-sm text-slate-300">
+                      20–21 November 2026
+                    </div>
+                    <div class="text-sm text-slate-300">
+                      Aarana Lawns, Vadodara, Gujarat
+                    </div>
+                    <div class="text-sm font-semibold text-white">
+                      Stall No. 47 &amp; 48
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Button -->
+              <div
+                class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center"
+              >
+                <button
+                  onclick="openModal()"
+                  class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-brand-blue text-brand-midnight text-sm font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center"
+                >
+                  Enquire about dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                </button>
+                <a
+                  href="tel:+919225008576"
+                  class="mt-4 text-xs font-bold text-slate-400 hover:text-white transition"
+                >
+                  Prefer calling? +91 92250 08576
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (FLAT, NO BORDERS) -->
+    <footer class="bg-brand-midnight text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start justify-between"
+        >
+          <!-- Brand & Partner Info -->
+          <div class="md:col-span-6 space-y-4">
+            <img
+              src="Asset/Vaultex logo.png"
+              alt="Vaultex Safety Footwear"
+              class="h-16 w-auto bg-white p-1 rounded-lg"
+            />
+            <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+              Vaultex is an international industrial safety footwear brand
+              engineered for demanding work environments since 2003.
+            </p>
+            <div class="pt-2">
+              <img
+                src="Asset/top bar 1.png"
+                alt="Market Distribution Partner - Calliber's Safety Solutions LLP"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="md:col-span-3 space-y-2 text-xs">
+            <span
+              class="block font-semibold uppercase text-[10px] tracking-wider text-brand-blue"
+              >Navigation</span
+            >
+            <div class="flex flex-col space-y-2 text-slate-400">
+              <a href="#brand" class="hover:text-white transition"
+                >Know Vaultex</a
+              >
+              <a href="#products" class="hover:text-white transition"
+                >Product Range</a
+              >
+              <a href="#dealership" class="hover:text-white transition"
+                >Dealership Opportunity</a
+              >
+              <a href="#accelerator" class="hover:text-white transition"
+                >Rewards Program</a
+              >
+              <a href="#exhibition" class="hover:text-white transition"
+                >Gujarat WOSH 2026</a
+              >
+              <a href="#faqs" class="hover:text-white transition">FAQs</a>
+            </div>
+          </div>
+
+          <!-- Official Coordinates -->
+          <div class="md:col-span-3 space-y-2 text-xs text-slate-400">
+            <span
+              class="block font-semibold uppercase text-[10px] tracking-wider text-brand-blue"
+              >Contact Information</span
+            >
+            <p class="leading-relaxed">
+              Market Distribution Partner:<br />
+              <strong>Calliber's Safety Solutions LLP</strong>
+            </p>
+            <p>
+              Phone:
+              <a
+                href="tel:+919225008576"
+                class="text-white hover:text-brand-blue font-bold"
+                >+91 92250 08576</a
+              ><br />
+              Email:
+              <a
+                href="mailto:info@calliberssafety.com"
+                class="text-white hover:text-brand-blue font-bold"
+                >info@calliberssafety.com</a
+              >
+            </p>
+            <p class="text-slate-500 pt-2 text-[11px]">
+              Gujarat WOSH 2026: Stall No. 47 &amp; 48
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4"
+        >
+          <p>
+            © <span id="yearSpan">2026</span> Vaultex &amp; Calliber's Safety
+            Solutions LLP. All rights reserved.
+          </p>
+          <p>Built for authorized B2B dealership enquiries.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================================
+       DEALERSHIP ENQUIRY POPUP MODAL (FLAT, NO BORDERS, NO SHADOWS, NO BLURS)
+       ========================================================================= -->
+    <div
+      id="enquiryModal"
+      class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-midnight/80 p-4 sm:p-6 md:p-10 flex items-center justify-center"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="relative w-full max-w-xl rounded-3xl bg-white p-6 sm:p-8">
+        <!-- Close Button -->
+        <button
+          onclick="closeModal()"
+          class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-subtle hover:bg-slate-200 text-slate-600 hover:text-brand-midnight grid place-items-center text-sm font-semibold transition"
+          aria-label="Close Modal"
+        >
+          <i class="fa-regular fa-xmark text-sm"></i>
+        </button>
+
+        <!-- Modal Header -->
+        <div class="pb-4 mb-5 pr-8">
+          <span
+            class="inline-block text-xs font-semibold uppercase tracking-wider text-brand-blue"
+          >
+            Dealership &amp; Wholesaler Opportunity
+          </span>
+          <h3
+            id="modalTitle"
+            class="text-2xl font-bold text-brand-midnight mt-1"
+          >
+            Enquire About Dealership
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">
+            Share your details to connect directly with the Vaultex &amp;
+            Calliber's team.
+          </p>
+        </div>
+
+        <!-- Modal Form (Flat Inputs) -->
+        <form
+          id="modalForm"
+          onsubmit="handleFormSubmit(event, 'modalFormMessage')"
+          class="space-y-4"
+        >
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1"
+              >Full name *</label
+            >
+            <input
+              type="text"
+              name="modalFullName"
+              required
+              placeholder="Your full name"
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-brand-midnight mb-1"
+                >Business name *</label
+              >
+              <input
+                type="text"
+                name="modalBusinessName"
+                required
+                placeholder="Company / firm name"
+                class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-brand-midnight mb-1"
+                >Mobile number *</label
+              >
+              <input
+                type="tel"
+                name="modalMobileNumber"
+                required
+                pattern="[0-9+ ]{10,15}"
+                placeholder="10-digit mobile number"
+                class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-brand-midnight mb-1"
+                >City and state *</label
+              >
+              <input
+                type="text"
+                name="modalCityState"
+                required
+                placeholder="City &amp; State"
+                class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-brand-midnight mb-1"
+                >Business category *</label
+              >
+              <select
+                name="modalBusinessCategory"
+                required
+                class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input text-slate-700 focus:bg-brand-blue-light"
+              >
+                <option value="">Select category</option>
+                <option value="Safety equipment">Safety equipment</option>
+                <option value="Industrial tools">Industrial tools</option>
+                <option value="Safety shoes">Safety shoes</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Optional selected model reference -->
+          <div>
+            <label class="block text-xs font-bold text-brand-midnight mb-1"
+              >Model interested in (optional)</label
+            >
+            <input
+              type="text"
+              id="modalInterestedModel"
+              name="modalInterestedModel"
+              placeholder="e.g. Vaultex Epic 051 / All Models"
+              class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-surface-input focus:bg-brand-blue-light"
+            />
+          </div>
+
+          <!-- Consent -->
+          <div>
+            <label
+              class="flex items-start gap-2 text-[11px] leading-snug text-slate-500 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                name="modalConsent"
+                required
+                class="mt-0.5 rounded text-brand-blue"
+              />
+              <span
+                >By submitting, you agree to be contacted by Calliber's Safety
+                Solutions LLP regarding your dealership enquiry. View our
+                <a href="#" class="underline hover:text-brand-blue transition"
+                  >privacy policy</a
+                >. *</span
+              >
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-semibold uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200"
+          >
+            Submit Business Enquiry <i class="fa-regular fa-paper-plane ml-1.5 text-xs"></i>
+          </button>
+        </form>
+
+        <!-- Success Notification -->
+        <div
+          id="modalFormMessage"
+          class="hidden mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs"
+        >
+          <strong>Thank you!</strong> Your dealership enquiry has been
+          submitted. Our team will contact you shortly.
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+      // Set dynamic current year in footer
+      document.getElementById("yearSpan").textContent =
+        new Date().getFullYear();
+
+      // Mobile navigation toggle
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIconOpen = document.getElementById("menuIconOpen");
+      const menuIconClose = document.getElementById("menuIconClose");
+
+      function toggleMobileMenu() {
+        const isClosed = mobileMenu.classList.contains("hidden");
+        if (isClosed) {
+          mobileMenu.classList.remove("hidden");
+          menuIconOpen.classList.add("hidden");
+          menuIconClose.classList.remove("hidden");
+        } else {
+          mobileMenu.classList.add("hidden");
+          menuIconOpen.classList.remove("hidden");
+          menuIconClose.classList.add("hidden");
+        }
+      }
+
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIconOpen.classList.remove("hidden");
+          menuIconClose.classList.add("hidden");
+        });
+      });
+
+      // Product Filter Buttons (Flat)
+      const filterBtns = document.querySelectorAll(".product-filter-btn");
+      const productItems = document.querySelectorAll(".product-item");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          filterBtns.forEach((b) => {
+            b.classList.remove("bg-brand-midnight", "text-white");
+            b.classList.add("bg-white", "text-slate-700");
+          });
+          btn.classList.remove("bg-white", "text-slate-700");
+          btn.classList.add("bg-brand-midnight", "text-white");
+
+          productItems.forEach((item) => {
+            const cat = item.getAttribute("data-cat");
+            if (filter === "all" || cat === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // FAQ Accordion interaction
+      function toggleFaq(button) {
+        const item = button.parentElement;
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach((el) => {
+          el.classList.remove("active");
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+        }
+      }
+
+      // Modal Popup Controls
+      const enquiryModal = document.getElementById("enquiryModal");
+      const modalInterestedModel = document.getElementById(
+        "modalInterestedModel",
+      );
+
+      function openModal() {
+        modalInterestedModel.value = "";
+        enquiryModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function openModalWithModel(modelName) {
+        modalInterestedModel.value = modelName;
+        enquiryModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        enquiryModal.classList.add("hidden");
+        document.body.style.overflow = "";
+        const msg = document.getElementById("modalFormMessage");
+        if (msg) msg.classList.add("hidden");
+      }
+
+      // Close modal on escape key or clicking backdrop
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !enquiryModal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+
+      enquiryModal.addEventListener("click", (e) => {
+        if (e.target === enquiryModal) {
+          closeModal();
+        }
+      });
+
+      // Lead Form Submission Handler (simulated B2B lead capture)
+      function handleFormSubmit(event, messageElementId) {
+        event.preventDefault();
+        const msgBox = document.getElementById(messageElementId);
+        if (msgBox) {
+          msgBox.classList.remove("hidden");
+          msgBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+        event.target.reset();
+      }
+    </script>
+  </body>
+</html>

@@ -36,19 +36,40 @@
               inter: ["Inter", "sans-serif"],
             },
             colors: {
+              /* ── PALETTE 1: Vaultex Brand (Black · Blue · White · Grey) ── */
               brand: {
                 blue: "#00ADEF",
                 "blue-light": "#E5F8FE",
                 "blue-hover": "#26C3F3",
                 "blue-dark": "#0090C9",
                 midnight: "#00000D",
-                "midnight-card": "#070C1E",
+                "midnight-card": "#0A0F1E",
                 "midnight-surface": "#03081A",
+                grey: "#6B7280",
+                "grey-light": "#F1F5F9",
+                "grey-mid": "#CBD5E1",
               },
               surface: {
                 subtle: "#F4F8FA",
                 light: "#F8FAFC",
                 input: "#EEF3F6",
+              },
+              /* ── PALETTE 2: Gujarat WOSH (Orange · Faint Orange · Faint Red) ── */
+              wosh: {
+                orange: "#F97316",        /* medium bright orange */
+                "orange-light": "#FFF1E6", /* faint orange background */
+                "orange-mid": "#FDBA74",   /* warm amber accent */
+                red: "#EF4444",            /* faint red */
+                "red-light": "#FEF2F2",    /* faint red background */
+                "red-mid": "#FCA5A5",      /* muted coral */
+                "card-bg": "#FFF7F0",      /* warm off-white for WOSH cards */
+              },
+              /* ── PALETTE 3: CTA (High-Visibility Bright Red) ── */
+              cta: {
+                red: "#E8230A",            /* primary bright CTA red */
+                "red-hover": "#C41A07",    /* darker on hover */
+                "red-light": "#FFF0EE",    /* faint tint for secondary states */
+                "red-text": "#FFFFFF",     /* white text on red CTA */
               },
             },
           },
@@ -323,7 +344,7 @@
                 </a> -->
           <button
             onclick="openModal()"
-            class="px-5 py-2.5 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+            class="px-5 py-2.5 rounded-xl bg-cta-red text-cta-red-text text-xs font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200"
           >
             Enquire Dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1 text-xs"></i>
           </button>
@@ -383,7 +404,7 @@
               openModal();
               toggleMobileMenu();
             "
-            class="w-full py-3 rounded-xl bg-brand-blue text-brand-midnight text-center font-semibold uppercase text-xs tracking-wider"
+            class="w-full py-3 rounded-xl bg-cta-red text-cta-red-text text-center font-semibold uppercase text-xs tracking-wider"
           >
             Enquire About Dealership
           </button>
@@ -437,8 +458,8 @@
                   <h1
                     class="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.1] tracking-tight text-brand-midnight"
                   >
-                    Your next business opportunity.<br />
-                    <span class="text-brand-blue">Powered by Vaultex.</span>
+                    Received Interests from More than a 100 Dealers across Gujarat.<br />
+                    <span class="text-brand-blue">Why stay behind - Fill in your interest now.</span>
                   </h1>
 
                   <p
@@ -506,7 +527,7 @@
               >
                 <a
                   href="#heroForm"
-                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-sm font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center"
+                  class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 text-center"
                 >
                   Enquire about dealership <i class="fa-regular fa-arrow-right ml-1"></i>
                 </a>
@@ -680,7 +701,7 @@
                   <!-- Submit Button -->
                   <button
                     type="submit"
-                    class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-semibold uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200 flex items-center justify-center gap-2"
+                    class="w-full py-3.5 rounded-xl bg-cta-red text-cta-red-text font-semibold uppercase text-xs tracking-wider hover:bg-cta-red-hover transition duration-200 flex items-center justify-center gap-2"
                   >
                     <span>Submit Business Enquiry</span>
                     <i class="fa-regular fa-paper-plane text-xs"></i>
@@ -717,13 +738,13 @@
          SECTION 2: EXHIBITION INVITATION (GUJARAT WOSH 2026)
          Content from: Landing Page Content - Vaultex.md Section 6
          ========================================================================= -->
-      <section id="exhibition" class="py-16 bg-white">
+      <section id="exhibition" class="py-16 bg-wosh-orange-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Left: Invitation Details -->
             <div class="lg:col-span-5">
               <div
-                class="rounded-3xl bg-brand-midnight text-white p-2 relative"
+                class="rounded-3xl bg-wosh-orange text-white p-2 relative"
               >
                 <img
                   src="/Asset/poster.jpeg"
@@ -736,7 +757,7 @@
 
             <div class="lg:col-span-7">
               <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-semibold uppercase tracking-wider mb-3"
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-wosh-orange/10 text-wosh-orange text-xs font-semibold uppercase tracking-wider mb-3"
               >
                 Exhibition Invitation
               </div>
@@ -760,28 +781,28 @@
                 </h3>
                 <ul class="space-y-2.5 text-slate-700 text-sm">
                   <li class="flex items-start gap-3">
-                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <i class="fa-regular fa-circle-check text-wosh-orange text-sm shrink-0 mt-0.5"></i>
                     <span
                       >Explore the Vaultex footwear range in person, inspecting
                       materials, stitching, and soles.</span
                     >
                   </li>
                   <li class="flex items-start gap-3">
-                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <i class="fa-regular fa-circle-check text-wosh-orange text-sm shrink-0 mt-0.5"></i>
                     <span
                       >Discuss products specifically matched to your customer
                       base and industry demands.</span
                     >
                   </li>
                   <li class="flex items-start gap-3">
-                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <i class="fa-regular fa-circle-check text-wosh-orange text-sm shrink-0 mt-0.5"></i>
                     <span
                       >Learn about dealership opportunities and support
                       available to partners.</span
                     >
                   </li>
                   <li class="flex items-start gap-3">
-                    <i class="fa-regular fa-circle-check text-brand-blue text-sm shrink-0 mt-0.5"></i>
+                    <i class="fa-regular fa-circle-check text-wosh-orange text-sm shrink-0 mt-0.5"></i>
                     <span
                       >Discover the dealer growth accelerator program, rewards,
                       and eligibility tiers.</span
@@ -793,15 +814,15 @@
               <div class="mt-8 flex flex-wrap items-center gap-4">
                 <button
                   onclick="openModal()"
-                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+                  class="px-8 py-4 rounded-xl bg-wosh-orange text-white text-xs font-semibold uppercase tracking-wider hover:bg-wosh-red transition duration-200"
                 >
                   Enquire before your visit <i class="fa-regular fa-arrow-right ml-1"></i>
                 </button>
                 <a
                   href="tel:+919225008576"
-                  class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-brand-blue transition flex items-center gap-2"
+                  class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-wosh-orange transition flex items-center gap-2"
                 >
-                  <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
+                  <i class="fa-regular fa-phone text-wosh-orange text-xs"></i>
                   <span>Call +91 92250 08576</span>
                 </a>
               </div>
@@ -1232,7 +1253,7 @@
             </div>
             <button
               onclick="openModal()"
-              class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+              class="shrink-0 px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-xs font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200"
             >
               Enquire about dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
             </button>
@@ -1600,7 +1621,7 @@
 
             <button
               onclick="openModal()"
-              class="shrink-0 px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+              class="shrink-0 px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-xs font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200"
             >
               Enquire about the program <i class="fa-regular fa-arrow-right ml-1.5 text-xs"></i>
             </button>
@@ -1675,7 +1696,7 @@
               <div class="mt-8 flex flex-wrap items-center gap-4">
                 <button
                   onclick="openModal()"
-                  class="px-8 py-4 rounded-xl bg-brand-blue text-brand-midnight text-xs font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200"
+                  class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-xs font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200"
                 >
                   Enquire before your visit <i class="fa-regular fa-arrow-right ml-1"></i>
                 </button>
@@ -2013,7 +2034,7 @@
               >
                 <button
                   onclick="openModal()"
-                  class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-brand-blue text-brand-midnight text-sm font-semibold uppercase tracking-wider hover:bg-brand-blue-hover transition duration-200 text-center"
+                  class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-cta-red text-cta-red-text text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 text-center"
                 >
                   Enquire about dealership <i class="fa-regular fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
                 </button>
@@ -2279,7 +2300,7 @@
 
           <button
             type="submit"
-            class="w-full py-3.5 rounded-xl bg-brand-blue text-brand-midnight font-semibold uppercase text-xs tracking-wider hover:bg-brand-blue-hover transition duration-200"
+            class="w-full py-3.5 rounded-xl bg-cta-red text-cta-red-text font-semibold uppercase text-xs tracking-wider hover:bg-cta-red-hover transition duration-200"
           >
             Submit Business Enquiry <i class="fa-regular fa-paper-plane ml-1.5 text-xs"></i>
           </button>
