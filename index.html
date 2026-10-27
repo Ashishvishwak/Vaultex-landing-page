@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -957,7 +957,7 @@
               </div>
 
               <!-- Urgency callout box & Enquire button -->
-              <div data-motion="zoom-loop" class="mt-8 p-6 rounded-2xl bg-wosh-orange-light/70 origin-center will-change-transform">
+              <div data-motion="zoom-loop" class="mt-8 p-6 rounded-2xl bg-wosh-orange/70 origin-center will-change-transform">
                 <div class="flex items-start gap-3.5">
                   <i class="fa-regular fa-fire-flame-curved text-wosh-orange text-xl shrink-0 mt-0.5"></i>
                   <div>
@@ -1500,7 +1500,7 @@
           const zoomAnim = animate(
             urgencyBox,
             { scale: [1, 1.035, 1] },
-            { duration: 2.2, repeat: Infinity, easing: "ease-in-out" }
+            { duration: 1, repeat: Infinity, easing: "ease-in-out" }
           );
           return () => zoomAnim.stop();
         });
