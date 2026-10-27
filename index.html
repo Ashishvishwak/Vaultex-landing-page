@@ -12,8 +12,8 @@
     />
 
     <!-- Favicon / Fonts -->
-    <link rel="icon" type="image/png" href="Asset/Vaultex logo-01.png" />
-    <link rel="apple-touch-icon" href="Asset/Vaultex logo-01.png" />
+    <link rel="icon" type="image/png" href="Asset/Vaultex logo-02.png" />
+    <link rel="apple-touch-icon" href="Asset/Vaultex logo-02.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -197,21 +197,6 @@
         }
       }
 
-      /* Urgency callout floating animation (10px up & down continuous loop) */
-      @keyframes floatUpDown {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-
-      .animate-float-box {
-        animation: floatUpDown 2.6s ease-in-out infinite;
-        will-change: transform;
-      }
 
       /* Hero Badge Glowing Pulse Dot Animation */
       @keyframes badgeGlowPulse {
@@ -377,7 +362,7 @@
          SECTION 1: HERO & INQUIRY FORM
          Content: Section 1
          ========================================================================= -->
-      <section id="hero" class="bg-surface-subtle py-12 lg:py-16 relative overflow-hidden">
+      <section id="hero" class="bg-surface-subtle py-8 sm:py-10 lg:py-8 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div
             class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
@@ -634,7 +619,7 @@
          SECTION 2: MEET US AT THE EXHIBITION
          Content: Section 2
          ========================================================================= -->
-      <section id="exhibition-bar" class="py-10 bg-white">
+      <section id="exhibition-bar" class="py-4 sm:py-6 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="rounded-3xl bg-wosh-card-bg p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6"
@@ -715,7 +700,7 @@
          SECTION 3: RANGE ADDITION & ACCELERATOR PROGRAM
          Content: Section 3
          ========================================================================= -->
-      <section id="range-addition" class="py-16 bg-white">
+      <section id="range-addition" class="pt-4 sm:pt-6 pb-8 sm:pb-10 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Left Column: Content -->
@@ -813,7 +798,7 @@
          SECTION 4: KNOW YOUR BRAND: VAULTEX | SINCE 2003
          Content: Section 4
          ========================================================================= -->
-      <section id="brand" class="py-16 bg-surface-subtle">
+      <section id="brand" class="py-8 sm:py-10 lg:py-12 bg-surface-subtle">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Left Column: Brand Story -->
@@ -911,7 +896,7 @@
          SECTION 6: EXHIBITION INVITATION
          Content: Section 6
          ========================================================================= -->
-      <section id="exhibition" class="py-16 bg-white">
+      <section id="exhibition" class="py-8 sm:py-10 lg:py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Left Side: Poster Showcase -->
@@ -972,11 +957,11 @@
               </div>
 
               <!-- Urgency callout box & Enquire button -->
-              <div class="mt-8 p-6 rounded-2xl bg-wosh-orange-light/70 animate-float-box">
+              <div data-motion="zoom-loop" class="mt-8 p-6 rounded-2xl bg-wosh-orange-light/70 origin-center will-change-transform">
                 <div class="flex items-start gap-3.5">
                   <i class="fa-regular fa-fire-flame-curved text-wosh-orange text-xl shrink-0 mt-0.5"></i>
                   <div>
-                    <p class="text-sm sm:text-base font-bold text-brand-midnight">
+                    <p class="text-sm sm:text-base font-bold text-brand-midnight italic uppercase">
                       Received Interest from more than a 100 dealers across Gujarat.
                     </p>
                     <p class="text-xs sm:text-sm text-slate-600 mt-1">
@@ -1010,7 +995,7 @@
          SECTION 8: FINAL CTA & CONTACT
          Content: Section 8
          ========================================================================= -->
-      <section id="contact" class="py-16 bg-white">
+      <section id="contact" class="pt-2 sm:pt-4 pb-10 sm:pb-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="rounded-3xl bg-brand-midnight text-white p-8 sm:p-12 lg:p-14"
@@ -1486,8 +1471,8 @@
         if (!sec) return;
 
         inView(sec, () => {
-          // Animate cards inside section with smooth scale-up & fade (excluding continuous floating box)
-          const cards = sec.querySelectorAll(".rounded-3xl, .rounded-2xl:not(.animate-float-box)");
+          // Animate cards inside section with smooth scale-up & fade (excluding continuous zoom box)
+          const cards = sec.querySelectorAll(".rounded-3xl, .rounded-2xl:not([data-motion='zoom-loop'])");
           if (cards.length) {
             animate(
               cards,
@@ -1508,7 +1493,20 @@
         }, { amount: 0.15 });
       });
 
-      // 3. Scroll progress indicator from Motion
+      // 3. Continuous Zoom In & Zoom Out Loop for Urgency Callout via Motion
+      const urgencyBox = document.querySelector("[data-motion='zoom-loop']");
+      if (urgencyBox) {
+        inView(urgencyBox, () => {
+          const zoomAnim = animate(
+            urgencyBox,
+            { scale: [1, 1.035, 1] },
+            { duration: 2.2, repeat: Infinity, easing: "ease-in-out" }
+          );
+          return () => zoomAnim.stop();
+        });
+      }
+
+      // 4. Scroll progress indicator from Motion
       const progressBar = document.getElementById("scrollProgressBar");
       if (progressBar) {
         scroll((progress) => {
