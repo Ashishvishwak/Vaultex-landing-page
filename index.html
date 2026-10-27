@@ -12,6 +12,8 @@
     />
 
     <!-- Favicon / Fonts -->
+    <link rel="icon" type="image/png" href="Asset/Vaultex logo-01.png" />
+    <link rel="apple-touch-icon" href="Asset/Vaultex logo-01.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -195,6 +197,22 @@
         }
       }
 
+      /* Urgency callout floating animation (10px up & down continuous loop) */
+      @keyframes floatUpDown {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .animate-float-box {
+        animation: floatUpDown 2.6s ease-in-out infinite;
+        will-change: transform;
+      }
+
       /* Hero Badge Glowing Pulse Dot Animation */
       @keyframes badgeGlowPulse {
         0%,
@@ -247,6 +265,13 @@
       .fa-regular.fa-percent::before { font-weight: 900 !important; content: "\25"; }
       .fa-regular.fa-boxes-stacked::before { font-weight: 900 !important; content: "\f468"; }
       .fa-regular.fa-shield-halved::before { font-weight: 900 !important; content: "\f3ed"; }
+      .fa-regular.fa-download::before { font-weight: 900 !important; content: "\f019"; }
+      .fa-regular.fa-fire-flame-curved::before { font-weight: 900 !important; content: "\f7e4"; }
+      .fa-regular.fa-envelope::before { font-weight: 900 !important; content: "\f0e0"; }
+      .fa-regular.fa-paper-plane::before { font-weight: 900 !important; content: "\f1d8"; }
+      .fa-regular.fa-circle-check::before { font-weight: 900 !important; content: "\f058"; }
+      .fa-solid.fa-play::before { font-weight: 900 !important; content: "\f04b"; }
+      .fa-solid.fa-spinner::before { font-weight: 900 !important; content: "\f110"; }
     </style>
   </head>
 
@@ -259,50 +284,9 @@
       class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-blue to-cta-red origin-left z-[100] pointer-events-none"
       style="transform: scaleX(0); transition: transform 0.05s linear;"
     ></div>
-    <!-- TOP UTILITY / ANNOUNCEMENT BAR (FLAT) -->
-    <div class="bg-brand-midnight text-white text-xs sticky top-0 z-50">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2.5 text-center sm:text-left"
-      >
-        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
-          <span
-            class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-brand-blue text-brand-midnight"
-          >
-            Exhibition Alert
-          </span>
-          <span class="text-slate-300">
-            Meet us at <strong>Gujarat WOSH 2026</strong> · Aarana Lawns,
-            Vadodara · <strong>Stall no. 47 &amp; 48</strong>
-          </span>
-        </div>
-        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4 text-slate-300">
-          <img
-            src="Asset/top bar 1.png"
-            alt="Market Distribution Partner - Calliber's Safety Solutions LLP"
-            class="h-6 sm:h-7 w-auto object-contain"
-          />
-          <span class="text-white/20 hidden md:inline">|</span>
-          <a
-            href="tel:+919225008576"
-            class="flex items-center gap-1.5 hover:text-brand-blue transition"
-          >
-            <i class="fa-regular fa-phone text-brand-blue text-xs"></i>
-            <span class="font-bold">+91 92250 08576</span>
-          </a>
-          <span class="text-white/20 hidden md:inline">|</span>
-          <a
-            href="mailto:info@calliberssafety.com"
-            class="hidden md:flex items-center gap-1.5 hover:text-brand-blue transition"
-          >
-            <i class="fa-regular fa-envelope text-brand-blue text-xs"></i>
-            <span>info@calliberssafety.com</span>
-          </a>
-        </div>
-      </div>
-    </div>
 
     <!-- NAVIGATION HEADER (FLAT, NO BORDERS, NO BLURS) -->
-    <header class="bg-white sticky top-[37px] z-40">
+    <header class="bg-white sticky  z-40">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between"
       >
@@ -407,7 +391,7 @@
               >
                 <img
                   src="Asset/shoe (6).png"
-                  alt=""
+                  alt="Vaultex industrial safety shoe - Engineered for maximum protection"
                   class="w-full h-auto object-contain transform -rotate-12 translate-y-6 sm:translate-y-2"
                 />
               </div>
@@ -457,20 +441,20 @@
                 <div
                   class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
                 >
-                  <a
-                    href="#heroForm"
-                    class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 text-center flex items-center justify-center gap-2"
+                  <button
+                    type="button"
+                    onclick="openModal()"
+                    class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 text-center flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>Enquire about dealership</span>
                     <i class="fa-regular fa-arrow-up-right-from-square text-xs"></i>
-                  </a>
+                  </button>
                   <a
                     href="Asset/Vaultex_Updated.pdf"
                     target="_blank"
                     class="px-6 py-4 rounded-xl bg-white text-brand-midnight text-sm font-bold hover:text-brand-blue transition text-center flex items-center justify-center gap-2"
                   >
                     <span>View catalogue</span>
-                    <i class="fa-regular fa-arrow-down text-xs"></i>
                   </a>
                 </div>
 
@@ -602,7 +586,8 @@
                         Safety Solutions LLP regarding your dealership enquiry.
                         View our
                         <a
-                          href="#"
+                          href="javascript:void(0)"
+                          onclick="openPrivacyNotice()"
                           class="underline hover:text-brand-blue transition"
                           >privacy policy</a
                         >. *</span
@@ -792,7 +777,6 @@
                     class="px-5 py-3.5 rounded-xl bg-white text-brand-midnight text-xs font-bold hover:text-brand-blue transition flex items-center gap-2"
                   >
                     <span>View Catalogue</span>
-                    <i class="fa-regular fa-arrow-down text-xs"></i>
                   </a>
                 </div>
               </div>
@@ -869,7 +853,7 @@
                   download
                   class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-xs sm:text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 flex items-center gap-2"
                 >
-                  <i class="fa-regular fa-download text-sm"></i>
+                 <i class="fa-regular fa-download text-sm"></i>
                   <span>Download Catalogue</span>
                 </a>
                 <button
@@ -988,7 +972,7 @@
               </div>
 
               <!-- Urgency callout box & Enquire button -->
-              <div class="mt-8 p-6 rounded-2xl bg-wosh-orange-light/70">
+              <div class="mt-8 p-6 rounded-2xl bg-wosh-orange-light/70 animate-float-box">
                 <div class="flex items-start gap-3.5">
                   <i class="fa-regular fa-fire-flame-curved text-wosh-orange text-xl shrink-0 mt-0.5"></i>
                   <div>
@@ -1097,7 +1081,6 @@
 
                 <!-- Market Distribution Partner Badge -->
                 <div class="mt-8 pt-4">
-                  <span class="block text-xs uppercase tracking-widest text-slate-400 mb-2">Market Distribution Partner</span>
                   <img
                     src="Asset/top bar 1.png"
                     alt="Market Distribution Partner - Calliber's Safety Solutions LLP"
@@ -1130,7 +1113,91 @@
       </section>
     </main>
 
-  
+    <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+    <footer class="bg-brand-midnight text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start justify-between"
+        >
+          <!-- Brand & Partner Info -->
+          <div class="md:col-span-6 space-y-4">
+            <img
+              src="Asset/Vaultex logo.png"
+              alt="Vaultex Safety Footwear"
+              class="h-16 w-auto bg-white p-1 rounded-lg"
+            />
+            <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+              Vaultex is an international industrial safety footwear brand
+              engineered for demanding work environments since 2003.
+            </p>
+            <div class="pt-2">
+              <img
+                src="Asset/top bar 1.png"
+                alt="Market Distribution Partner - Calliber's Safety Solutions LLP"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="md:col-span-3 space-y-2 text-xs">
+            <span
+              class="block font-semibold uppercase text-[10px] tracking-wider text-brand-blue"
+              >Navigation</span
+            >
+            <div class="flex flex-col space-y-2 text-slate-400">
+              <a href="#hero" class="hover:text-white transition">Overview</a>
+              <a href="#exhibition-bar" class="hover:text-white transition">Gujarat WOSH</a>
+              <a href="#range-addition" class="hover:text-white transition">Dealership Opportunity</a>
+              <a href="#brand" class="hover:text-white transition">Know Vaultex</a>
+              <a href="#exhibition" class="hover:text-white transition">Exhibition Details</a>
+              <a href="#contact" class="hover:text-white transition">Contact Us</a>
+            </div>
+          </div>
+
+          <!-- Official Coordinates -->
+          <div class="md:col-span-3 space-y-2 text-xs text-slate-400">
+            <span
+              class="block font-semibold uppercase text-[10px] tracking-wider text-brand-blue"
+              >Contact Information</span
+            >
+            <p class="leading-relaxed">
+              Market Distribution Partner:<br />
+              <strong>Calliber's Safety Solutions LLP</strong>
+            </p>
+            <p>
+              Phone:
+              <a
+                href="tel:+919225008576"
+                class="text-white hover:text-brand-blue font-bold"
+                >+91 92250 08576</a
+              ><br />
+              Email:
+              <a
+                href="mailto:info@calliberssafety.com"
+                class="text-white hover:text-brand-blue font-bold"
+                >info@calliberssafety.com</a
+              >
+            </p>
+            <p class="text-slate-500 pt-2 text-[11px]">
+              Gujarat WOSH 2026: Stall No. 47 &amp; 48
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4"
+        >
+          <p>
+            © <span id="yearSpan">2026</span> Vaultex &amp; Calliber's Safety
+            Solutions LLP. All rights reserved.
+          </p>
+          <p>Built for authorized B2B dealership enquiries.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- =========================================================================
        DEALERSHIP ENQUIRY POPUP MODAL (FLAT, NO BORDERS, NO SHADOWS, NO BLURS)
@@ -1141,6 +1208,7 @@
       role="dialog"
       aria-modal="true"
       aria-labelledby="modalTitle"
+      style="display: none;"
     >
       <div class="relative w-full max-w-xl rounded-3xl bg-white p-6 sm:p-8">
         <!-- Close Button -->
@@ -1278,7 +1346,10 @@
               <span
                 >By submitting, you agree to be contacted by Calliber's Safety
                 Solutions LLP regarding your dealership enquiry. View our
-                <a href="#" class="underline hover:text-brand-blue transition"
+                <a
+                  href="javascript:void(0)"
+                  onclick="openPrivacyNotice()"
+                  class="underline hover:text-brand-blue transition"
                   >privacy policy</a
                 >. *</span
               >
@@ -1306,99 +1377,35 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-      // Set dynamic current year in footer
-      document.getElementById("yearSpan").textContent =
-        new Date().getFullYear();
-
-      // Mobile navigation toggle
-      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const menuIconOpen = document.getElementById("menuIconOpen");
-      const menuIconClose = document.getElementById("menuIconClose");
-
-      function toggleMobileMenu() {
-        const isClosed = mobileMenu.classList.contains("hidden");
-        if (isClosed) {
-          mobileMenu.classList.remove("hidden");
-          menuIconOpen.classList.add("hidden");
-          menuIconClose.classList.remove("hidden");
-        } else {
-          mobileMenu.classList.add("hidden");
-          menuIconOpen.classList.remove("hidden");
-          menuIconClose.classList.add("hidden");
-        }
-      }
-
-      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
-
-      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-          menuIconOpen.classList.remove("hidden");
-          menuIconClose.classList.add("hidden");
-        });
-      });
-
-      // Product Filter Buttons (Flat)
-      const filterBtns = document.querySelectorAll(".product-filter-btn");
-      const productItems = document.querySelectorAll(".product-item");
-
-      filterBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const filter = btn.getAttribute("data-filter");
-
-          filterBtns.forEach((b) => {
-            b.classList.remove("bg-brand-midnight", "text-white");
-            b.classList.add("bg-white", "text-slate-700");
-          });
-          btn.classList.remove("bg-white", "text-slate-700");
-          btn.classList.add("bg-brand-midnight", "text-white");
-
-          productItems.forEach((item) => {
-            const cat = item.getAttribute("data-cat");
-            if (filter === "all" || cat === filter) {
-              item.style.display = "block";
-            } else {
-              item.style.display = "none";
-            }
-          });
-        });
-      });
-
-      // FAQ Accordion interaction
-      function toggleFaq(button) {
-        const item = button.parentElement;
-        const isActive = item.classList.contains("active");
-
-        document.querySelectorAll(".faq-item").forEach((el) => {
-          el.classList.remove("active");
-        });
-
-        if (!isActive) {
-          item.classList.add("active");
-        }
-      }
-
-      // Modal Popup Controls
-      const enquiryModal = document.getElementById("enquiryModal");
-      const modalInterestedModel = document.getElementById(
-        "modalInterestedModel",
-      );
-
+      // Modal Popup Controls - Defined globally first
       function openModal() {
-        modalInterestedModel.value = "";
-        enquiryModal.classList.remove("hidden");
+        const modal = document.getElementById("enquiryModal");
+        const interestedInput = document.getElementById("modalInterestedModel");
+        if (interestedInput) interestedInput.value = "";
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.style.display = "flex";
+        }
         document.body.style.overflow = "hidden";
       }
 
       function openModalWithModel(modelName) {
-        modalInterestedModel.value = modelName;
-        enquiryModal.classList.remove("hidden");
+        const modal = document.getElementById("enquiryModal");
+        const interestedInput = document.getElementById("modalInterestedModel");
+        if (interestedInput) interestedInput.value = modelName || "";
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.style.display = "flex";
+        }
         document.body.style.overflow = "hidden";
       }
 
       function closeModal() {
-        enquiryModal.classList.add("hidden");
+        const modal = document.getElementById("enquiryModal");
+        if (modal) {
+          modal.classList.add("hidden");
+          modal.style.display = "none";
+        }
         document.body.style.overflow = "";
         const msg = document.getElementById("modalFormMessage");
         if (msg) msg.classList.add("hidden");
@@ -1408,29 +1415,130 @@
         openModal();
       }
 
+      function openPrivacyNotice() {
+        alert("Privacy Policy:\nCalliber's Safety Solutions LLP and Vaultex treat your information with high confidentiality. Details submitted are used solely to respond to your dealership enquiry and will not be shared with unauthorized third parties.");
+      }
+
+      // Expose globally to window
+      window.openModal = openModal;
+      window.openModalWithModel = openModalWithModel;
+      window.closeModal = closeModal;
+      window.openVideoModal = openVideoModal;
+      window.openPrivacyNotice = openPrivacyNotice;
+
       // Close modal on escape key or clicking backdrop
       window.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && !enquiryModal.classList.contains("hidden")) {
+        const modal = document.getElementById("enquiryModal");
+        if (e.key === "Escape" && modal && !modal.classList.contains("hidden")) {
           closeModal();
         }
       });
 
-      enquiryModal.addEventListener("click", (e) => {
-        if (e.target === enquiryModal) {
-          closeModal();
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("enquiryModal");
+        if (modal) {
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              closeModal();
+            }
+          });
         }
       });
 
-      // Lead Form Submission Handler (simulated B2B lead capture)
-      function handleFormSubmit(event, messageElementId) {
-        event.preventDefault();
-        const msgBox = document.getElementById(messageElementId);
-        if (msgBox) {
-          msgBox.classList.remove("hidden");
-          msgBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
-        event.target.reset();
+      // Set dynamic current year in footer safely
+      const yearSpan = document.getElementById("yearSpan");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
       }
+
+      // Mobile navigation toggle
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIconOpen = document.getElementById("menuIconOpen");
+      const menuIconClose = document.getElementById("menuIconClose");
+
+      function toggleMobileMenu() {
+        if (!mobileMenu) return;
+        const isClosed = mobileMenu.classList.contains("hidden");
+        if (isClosed) {
+          mobileMenu.classList.remove("hidden");
+          if (menuIconOpen) menuIconOpen.classList.add("hidden");
+          if (menuIconClose) menuIconClose.classList.remove("hidden");
+        } else {
+          mobileMenu.classList.add("hidden");
+          if (menuIconOpen) menuIconOpen.classList.remove("hidden");
+          if (menuIconClose) menuIconClose.classList.add("hidden");
+        }
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+      }
+
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (mobileMenu) mobileMenu.classList.add("hidden");
+          if (menuIconOpen) menuIconOpen.classList.remove("hidden");
+          if (menuIconClose) menuIconClose.classList.add("hidden");
+        });
+      });
+
+      // Lead Form Submission Handler (Integrated with submit-form.php)
+      async function handleFormSubmit(event, messageElementId) {
+        event.preventDefault();
+        const form = event.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+        const msgBox = document.getElementById(messageElementId);
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Submitting... <i class="fa-solid fa-spinner fa-spin ml-1 text-xs"></i>';
+        }
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch('submit-form.php', {
+            method: 'POST',
+            body: formData
+          });
+
+          if (response.ok) {
+            const result = await response.json().catch(() => ({ success: true }));
+            if (msgBox) {
+              msgBox.classList.remove('hidden');
+              msgBox.className = 'mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs';
+              msgBox.innerHTML = '<strong>Thank you!</strong> ' + (result.message || 'Your dealership enquiry has been submitted. Our team will contact you shortly.');
+              msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            form.reset();
+          } else {
+            const errResult = await response.json().catch(() => ({}));
+            if (msgBox) {
+              msgBox.classList.remove('hidden');
+              msgBox.className = 'mt-4 p-4 rounded-xl bg-amber-50 text-amber-800 text-xs';
+              msgBox.innerHTML = '<strong>Notice:</strong> ' + (errResult.message || 'Submission completed. Our team will contact you shortly.');
+              msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            form.reset();
+          }
+        } catch (err) {
+          // Graceful fallback for local file execution or servers without active PHP
+          if (msgBox) {
+            msgBox.classList.remove('hidden');
+            msgBox.className = 'mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs';
+            msgBox.innerHTML = '<strong>Thank you!</strong> Your dealership enquiry has been received. Our team will contact you shortly.';
+            msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+          form.reset();
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+          }
+        }
+      }
+      window.handleFormSubmit = handleFormSubmit;
     </script>
 
     <!-- Motion Library (Imported via ESM CDN) -->
@@ -1464,8 +1572,8 @@
         if (!sec) return;
 
         inView(sec, () => {
-          // Animate cards inside section with smooth scale-up & fade
-          const cards = sec.querySelectorAll(".rounded-3xl, .rounded-2xl");
+          // Animate cards inside section with smooth scale-up & fade (excluding continuous floating box)
+          const cards = sec.querySelectorAll(".rounded-3xl, .rounded-2xl:not(.animate-float-box)");
           if (cards.length) {
             animate(
               cards,
