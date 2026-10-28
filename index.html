@@ -798,13 +798,13 @@
          SECTION 4: KNOW YOUR BRAND: VAULTEX | SINCE 2003
          Content: Section 4
          ========================================================================= -->
-      <section id="brand" class="py-8 sm:py-10 lg:py-12 bg-surface-subtle">
+      <section id="brand" class="py-12 sm:py-16 lg:py-20 bg-surface-subtle">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
             <!-- Left Column: Brand Story -->
             <div class="lg:col-span-7">
               <div
-                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-bold uppercase tracking-wider mb-4"
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue-light text-brand-blue-dark text-xs font-bold uppercase tracking-wider mb-4 sm:mb-5"
               >
                 <span>Know Your Brand: Vaultex | Since 2003</span>
               </div>
@@ -816,7 +816,7 @@
               </h2>
 
               <div
-                class="mt-6 space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed"
+                class="mt-5 sm:mt-6 space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed"
               >
                 <p>
                   Since 2003, Vaultex has supplied industrial safety footwear to
@@ -831,14 +831,14 @@
               </div>
 
               <!-- Action: Download Catalogue -->
-              <div class="mt-8 flex flex-wrap items-center gap-4">
+              <div class="mt-8 sm:mt-10 flex flex-wrap items-center gap-3.5 sm:gap-4">
                 <a
                   href="Asset/Vaultex_Updated.pdf"
                   target="_blank"
                   download
                   class="px-8 py-4 rounded-xl bg-cta-red text-cta-red-text text-xs sm:text-sm font-semibold uppercase tracking-wider hover:bg-cta-red-hover transition duration-200 flex items-center gap-2"
                 >
-                 <i class="fa-regular fa-download text-sm"></i>
+                  <i class="fa-regular fa-download text-sm"></i>
                   <span>Download Catalogue</span>
                 </a>
                 <button
@@ -851,41 +851,42 @@
               </div>
             </div>
 
-            <!-- Right Column: Founder Video -->
-            <div class="lg:col-span-5">
+            <!-- Right Column: Brand Video -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
               <div
-                class="relative rounded-3xl overflow-hidden bg-brand-midnight text-white shadow-none aspect-video lg:aspect-[4/3] flex flex-col justify-end p-6 sm:p-8 group"
+                class="relative rounded-3xl overflow-hidden bg-brand-midnight w-full max-w-[340px] sm:max-w-[380px] h-[480px] sm:h-[520px] group"
               >
-                <img
-                  src="Asset/shoe (8).jpeg"
-                  alt="Vaultex Factory & Craftsmanship"
-                  class="absolute inset-0 w-full h-full object-cover opacity-35 group-hover:scale-105 transition duration-500 z-0"
-                />
+                <video
+                  id="brandVideo"
+                  class="w-full h-full object-cover"
+                  playsinline
+                  preload="metadata"
+                  controls
+                >
+                  <source src="Asset/vaultex.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
 
-                <!-- Play Button Overlay -->
-                <div class="absolute inset-0 flex items-center justify-center z-10">
-                  <button
-                    onclick="openVideoModal()"
-                    aria-label="Play Founder Video"
-                    class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cta-red text-white flex items-center justify-center hover:scale-110 hover:bg-cta-red-hover transition duration-300 pl-1"
-                  >
-                    <i class="fa-solid fa-play text-xl sm:text-2xl"></i>
-                  </button>
-                </div>
+                <!-- Video Play Overlay -->
+                <div
+                  id="videoPlayOverlay"
+                  onclick="playBrandVideo()"
+                  class="absolute inset-0 bg-brand-midnight/40 flex flex-col justify-between p-5 sm:p-6 cursor-pointer transition-opacity duration-300 z-10"
+                >
+                
 
-                <!-- Video Details Bottom -->
-                <div class="relative z-10 bg-black/60 p-4 rounded-2xl">
-                  <span
-                    class="inline-block px-2.5 py-1 rounded-md bg-brand-blue text-brand-midnight text-[10px] font-extrabold uppercase tracking-widest mb-1"
-                  >
-                    Founder's Message
-                  </span>
-                  <h3 class="text-base sm:text-lg font-bold text-white leading-snug">
-                    Building Safety Footwear with Purpose Since 2003
-                  </h3>
-                  <p class="text-xs text-slate-300 mt-1">
-                    Watch our founder discuss manufacturing standards &amp; dealer partnerships
-                  </p>
+                  <!-- Play Button -->
+                  <div class="flex items-center justify-center my-auto">
+                    <button
+                      type="button"
+                      aria-label="Play Vaultex Video"
+                      class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cta-red text-white flex items-center justify-center hover:scale-110 hover:bg-cta-red-hover transition duration-300 pl-1"
+                    >
+                      <i class="fa-solid fa-play text-xl sm:text-2xl"></i>
+                    </button>
+                  </div>
+
+                
                 </div>
               </div>
             </div>
@@ -1310,8 +1311,27 @@
         if (msg) msg.classList.add("hidden");
       }
 
+      function playBrandVideo() {
+        const video = document.getElementById("brandVideo");
+        const overlay = document.getElementById("videoPlayOverlay");
+        if (video) {
+          if (video.paused) {
+            video.play();
+            if (overlay) overlay.classList.add("opacity-0", "pointer-events-none");
+          } else {
+            video.pause();
+          }
+        }
+      }
+
       function openVideoModal() {
-        openModal();
+        const video = document.getElementById("brandVideo");
+        if (video) {
+          video.scrollIntoView({ behavior: "smooth", block: "center" });
+          playBrandVideo();
+        } else {
+          openModal();
+        }
       }
 
       function openPrivacyNotice() {
@@ -1322,6 +1342,7 @@
       window.openModal = openModal;
       window.openModalWithModel = openModalWithModel;
       window.closeModal = closeModal;
+      window.playBrandVideo = playBrandVideo;
       window.openVideoModal = openVideoModal;
       window.openPrivacyNotice = openPrivacyNotice;
 
@@ -1340,6 +1361,17 @@
             if (e.target === modal) {
               closeModal();
             }
+          });
+        }
+
+        const brandVideo = document.getElementById("brandVideo");
+        const videoOverlay = document.getElementById("videoPlayOverlay");
+        if (brandVideo && videoOverlay) {
+          brandVideo.addEventListener("play", () => {
+            videoOverlay.classList.add("opacity-0", "pointer-events-none");
+          });
+          brandVideo.addEventListener("ended", () => {
+            videoOverlay.classList.remove("opacity-0", "pointer-events-none");
           });
         }
       });
